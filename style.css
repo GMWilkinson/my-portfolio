@@ -1,0 +1,16 @@
+body {
+  background-image: url('http://www.impact-books.com/wp-content/uploads/w9fNuEX.jpg');
+  background-size: cover;
+  background-attachment: scroll;
+}
+h1 {
+  color: hotpink;
+}
+
+img {
+  height: 100px;
+  width: 150px;
+}
+.tester {
+  background-color: black;
+}
