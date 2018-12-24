@@ -5,17 +5,34 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   </head>
   <body>
     <main>
       <header class="hero">
         <div class="hero-body">
-          <div class="container">
-            <h1 class="title">Portfolio</h1>
+          <div class="level">
+            <h1 class="title level-left glow">Portfolio</h1>
+            <span class="image is-64x64 level-right">
+              <img src="http://www.best4balls.com/media/catalog/product/cache/1/thumbnail/700x/9df78eab33525d08d6e5fb8d27136e95/s/i/silly-face.png" alt="silly">
+            </span>
           </div>
         </div>
-      </header>
-      <article>
+        </header>
+        <nav class="navbar glow-box">
+          <div class="navbar-brand">
+            <div class="navbar-item logo">
+              <img class="box-glow" src="https://i.imgur.com/f1ciwd2.png?2" alt="logo">
+            </div>
+          </div>
+          <div class="navbar-end">
+            <a href="#about" class="navbar-item glow">About</a>
+            <a href="#portfolio" class="navbar-item glow">Projects</a>
+          </div>
+        </nav>
+      <article class="columns is-centered">
+        <div class="column is-8 about glow-box">
+          <h2 id="about" class="subtitle is-2 glow">About</h2>
         <p>
           Lorem ipsum dolor sit amet,
           consectetur adipisicing elit,
@@ -28,141 +45,220 @@
           cupidatat non proident, sunt in culpa qui officia
           deserunt mollit anim id est laborum.
         </p>
-      </article>
-      <div class="columns">
-        <div class="column">
-          <img src="https://i.imgur.com/nV5cMtn.png" onclick="openModal1();currentSlide(1)" class="hover-shadow">
-        </div>
-        <div class="column">
-          <img src="https://i.imgur.com/VusU94H.png" onclick="openModal2();currentSlide(5)" class="hover-shadow">
-        </div>
       </div>
+      </article>
+      <section class="columns is-centered">
+        <div class="columns column is-10 is-multiline image-thumbnails glow-box is-centered" id="portfolio">
+          <h2 class="subtitle is-2 column is-12 glow">My Projects</h2>
+          <div class="column is-5">
+            <h3>MakeBook</h3>
+            <img src="https://i.imgur.com/nV5cMtn.png" onclick="openModal1();currentSlide(1)" class="hover-shadow glow-box">
+          </div>
+          <div class="column is-5">
+            <h3>Events</h3>
+            <img src="https://i.imgur.com/VusU94H.png" onclick="openModal2();currentSlide(5)" class="hover-shadow glow-box">
+          </div>
+          <div class="column is-5">
+            <h3>MangaBook</h3>
+            <img src="https://i.imgur.com/jhmLXUq.png" onclick="openModal3();currentSlide(9)" class="hover-shadow glow-box">
+          </div>
+          <div class="column is-5">
+            <h3>Codebusters</h3>
+            <img src="https://i.imgur.com/mN2mfhm.png" onclick="openModal4();currentSlide(13)" class="hover-shadow glow-box">
+          </div>
+        </div>
+      </section>
       <!-- The Modal/Lightbox -->
     <div id="myModal1" class="modal">
-      <span class="close cursor" onclick="closeModal()">X</span>
-      <div class="modal-content">
-        <div class="mySlides">
-          <div class="numbertext">1 / 4</div>
-          <img src="https://i.imgur.com/nV5cMtn.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">2 / 4</div>
-          <img src="https://i.imgur.com/jcVo9NA.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">3 / 4</div>
-          <img src="https://i.imgur.com/cYCebmE.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">4 / 4</div>
-          <img src="https://i.imgur.com/iWAD0El.png" style="width:100%">
-        </div>
-        <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1)"><</a>
-        <a class="next" onclick="plusSlides(1)">></a>
-
-        <!-- Caption text -->
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-
+      <div class="caption-container">
+        <p id="caption1"></p>
+      </div>
+      <div class="modal-content columns is-centered">
+        <section class="main-image column is-8 is-vcentered">
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="https://i.imgur.com/nV5cMtn.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="https://i.imgur.com/jcVo9NA.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="https://i.imgur.com/cYCebmE.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="https://i.imgur.com/iWAD0El.png" style="width:100%">
+          </div>
+          <article class="content">
+              <p>
+              For this project I decided to make an app
+              where you can create your own adventure
+              game-book and read all the books that have been
+              created by other users.
+              The most difficult aspect of this project for me
+              was trying to work out how the user
+              would link the pages together through choices at
+              the bottom of the page. At present the app does
+              what it is supposed to but is not as user friendly
+              as I would like. I am most proud of the fact that
+              by changing states rather than changing urls for
+              the page changes, the reader of the created books can’t
+              cheat and go back a page as it takes you back to
+              the start of the book .
+              I have still have some bugs to fix.
+              </p>
+          </article>
+        </section>
         <!-- Thumbnail image controls -->
-        <div class="column">
-          <img class="demo" src="https://i.imgur.com/VusU94H.png" onclick="currentSlide(1)" alt="Story page">
-        </div>
-        <div class="column">
-          <img class="demo" src="https://i.imgur.com/jcVo9NA.png" onclick="currentSlide(2)" alt="Page Index">
-        </div>
-        <div class="column">
-          <img class="demo" src="https://i.imgur.com/cYCebmE.png" onclick="currentSlide(3)" alt="Page Create">
-        </div>
-        <div class="column">
-          <img class="demo" src="https://i.imgur.com/iWAD0El.png" onclick="currentSlide(4)" alt="Choice Create">
-        </div>
+        <section class="column is-2 thumbnails">
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/nV5cMtn.png" onclick="currentSlide(1)" alt="Story page">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/jcVo9NA.png" onclick="currentSlide(2)" alt="Page Index">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/cYCebmE.png" onclick="currentSlide(3)" alt="Page Create">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/iWAD0El.png" onclick="currentSlide(4)" alt="Choice Create">
+          </div>
+        </section>
       </div>
     </div>
     <div id="myModal2" class="modal">
-      <span class="close cursor" onclick="closeModal2()">X</span>
-      <div class="modal-content">
-        <div class="mySlides">
-          <div class="numbertext">1 / 4</div>
-          <img src="https://i.imgur.com/QU5QmgM.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">2 / 4</div>
-          <img src="https://i.imgur.com/jhmLXUq.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">3 / 4</div>
-          <img src="https://i.imgur.com/ireYISb.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">4 / 4</div>
-          <img src="https://i.imgur.com/XChuEP9.png" style="width:100%">
-        </div>
-        <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1)"><</a>
-        <a class="next" onclick="plusSlides(1)">></a>
-
-        <!-- Caption text -->
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-        <div class="column">
-          <img class="demo" src="https://i.imgur.com/QU5QmgM.png" onclick="currentSlide(5)" alt="">
-        </div>
-        <div class="column">
-          <img class="demo" src="https://i.imgur.com/jhmLXUq.png" onclick="currentSlide(6)" alt="Mountains">
-        </div>
-        <div class="column">
-          <img class="demo" src="https://i.imgur.com/ireYISb.png" onclick="currentSlide(7)" alt="Lights">
-        </div>
-        <div class="column">
-          <img class="demo" src="https://i.imgur.com/XChuEP9.png" onclick="currentSlide(8)" alt="Nature">
-        </div>
+      <div class="caption-container">
+        <p id="caption2"></p>
+      </div>
+      <div class="modal-content columns is-centered is-vcentered">
+        <section class="main-image column is-8">
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="https://i.imgur.com/VusU94H.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="https://i.imgur.com/iAy79Fn.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="https://i.imgur.com/3bb5hsX.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="https://i.imgur.com/icL5SkZ.png" style="width:100%">
+          </div>
+        </section>
+        <section class="column is-2 thumbnails">
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/VusU94H.png" onclick="currentSlide(5)" alt="Event Index">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/iAy79Fn.png" onclick="currentSlide(6)" alt="Event Show">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/3bb5hsX.png" onclick="currentSlide(7)" alt="Profile Page">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/icL5SkZ.png" onclick="currentSlide(8)" alt="Create Event">
+          </div>
+        </section>
       </div>
     </div>
     <div id="myModal3" class="modal">
-      <span class="close cursor" onclick="closeModal3()">X</span>
-      <div class="modal-content">
-        <div class="mySlides">
-          <div class="numbertext">1 / 4</div>
-          <img src="https://i.imgur.com/QU5QmgM.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">2 / 4</div>
-          <img src="https://i.imgur.com/jhmLXUq.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">3 / 4</div>
-          <img src="https://i.imgur.com/ireYISb.png" style="width:100%">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">4 / 4</div>
-          <img src="https://i.imgur.com/XChuEP9.png" style="width:100%">
-        </div>
-        <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1)"><</a>
-        <a class="next" onclick="plusSlides(1)">></a>
-
-        <!-- Caption text -->
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-        <div class="column">
-          <img class="demo" src="https://i.imgur.com/QU5QmgM.png" onclick="currentSlide(9)" alt="">
-        </div>
-        <div class="column">
-          <img class="demo" src="https://i.imgur.com/jhmLXUq.png" onclick="currentSlide(10)" alt="Mountains">
-        </div>
-        <div class="column">
-          <img class="demo" src="https://i.imgur.com/ireYISb.png" onclick="currentSlide(11)" alt="Lights">
-        </div>
-        <div class="column">
-          <img class="demo" src="https://i.imgur.com/XChuEP9.png" onclick="currentSlide(12)" alt="Nature">
-        </div>
+      <div class="caption-container">
+        <p id="caption3"></p>
+      </div>
+      <div class="modal-content columns is-centered is-vcentered">
+        <section class="main-image column is-8">
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="https://i.imgur.com/jhmLXUq.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="https://i.imgur.com/QU5QmgM.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="https://i.imgur.com/ireYISb.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="https://i.imgur.com/XChuEP9.png" style="width:100%">
+          </div>
+        </section>
+        <section class="column is-2 thumbnails">
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/jhmLXUq.png" onclick="currentSlide(9)" alt="Login">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/QU5QmgM.png" onclick="currentSlide(10)" alt="Review">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/ireYISb.png" onclick="currentSlide(11)" alt="Ratings and Character Add">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/XChuEP9.png" onclick="currentSlide(12)" alt="Index">
+          </div>
+        </section>
+      </div>
+    </div>
+    <div id="myModal4" class="modal">
+      <div class="caption-container">
+        <p id="caption4"></p>
+      </div>
+      <div class="modal-content columns is-centered is-vcentered">
+        <section class="main-image column is-8">
+          <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="https://i.imgur.com/mN2mfhm.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="https://i.imgur.com/DpEigWg.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="https://i.imgur.com/SrZg8Kq.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="https://i.imgur.com/P7jK6mO.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="https://i.imgur.com/60RTbS9.png" style="width:100%">
+          </div>
+        </section>
+        <section class="column is-2 thumbnails">
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/mN2mfhm.png" onclick="currentSlide(13)" alt="Game Board">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/DpEigWg.png" onclick="currentSlide(14)" alt="Question">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/SrZg8Kq.png" onclick="currentSlide(15)" alt="Game in Play">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/P7jK6mO.png" onclick="currentSlide(16)" alt="Correct Answer">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/60RTbS9.png" onclick="currentSlide(17)" alt="Wrong Answer">
+          </div>
+        </section>
       </div>
     </div>
   </main>
+  <footer class="footer glow-box">
+    <div class="content has-text-centered">
+      <p>Made by GMWilkinson using HTML, CSS3, JavaScript and Bulma</p>
+      <a href="#">LinkdIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </footer>
   <script type="text/javascript" src="script2.js"></script>
 </body>

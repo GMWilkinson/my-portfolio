@@ -1,3 +1,12 @@
+body {
+  font-family: 'Righteous', cursive;
+  min-height: 800px;
+  background-image: url('https://i.pinimg.com/originals/ed/e5/87/ede587a3c4083da1c79d9d4c17178301.jpg');
+  background-size: cover;
+}
+h3 {
+  font-size: 20px;
+}
 .row > .column {
   padding: 0 8px;
 }
@@ -7,35 +16,36 @@
   display: table;
   clear: both;
 }
-
-/* Create four equal columns that floats next to eachother */
-.column {
-  float: left;
-  width: 25%;
-}
-
 /* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 50px;
   left: 0;
   top: 0;
+  opacity: 1;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-image: url('http://www.impact-books.com/wp-content/uploads/w9fNuEX.jpg');
+  background-size: cover;
+  /* background-attachment: scroll; */
 }
-
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: rgba(222, 222, 222, 0.3);
   margin: auto;
   padding: 0;
-  width: 90%;
+  width: 80%;
+  height: 80%;
   max-width: 1200px;
+  animation-name: zoom;
+  animation-duration: 0.5s;
+}
+.main-image {
+  opacity: 1;
 }
 
 /* The Close Button */
@@ -59,37 +69,9 @@
 .mySlides {
   display: none;
 }
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: hotpink;
-  font-weight: bold;
-  font-size: 50px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
+.thumbnails {
+  top: 0;
 }
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -102,9 +84,9 @@
 /* Caption text */
 .caption-container {
   text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
+  color: hotpink;
+  font-size: 34px;
+  top: 0;
 }
 
 img.demo {
@@ -115,11 +97,92 @@ img.demo {
 .demo:hover {
   opacity: 1;
 }
-
+/* .main-image:hover {
+  opacity: 1;
+} */
 img.hover-shadow {
   transition: 0.3s;
+  border: 2px solid papayawhip;
+  border-radius: 5%;
 }
-
 .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 #999999, 0 6px 20px 0 #999999;
+}
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+.navbar {
+  background-color: rgba(255, 239, 213, 0.4);
+  position: sticky;
+  top: 0;
+  /* box-shadow: 0 5px 4px #999999; */
+  z-index: 0;
+  /* border-top: 5px solid papayawhip; */
+}
+.navbar-item {
+  color: white;
+}
+a:hover {
+  background-color: papayawhip;
+  color: rgba(0, 0, 0, 0);
+}
+.about {
+  padding: 50px 10px;
+  margin-top: 3em;
+  font-size: 25px;
+  color: white;
+  background-color: rgba(255, 239, 213, 0.4);
+  /* border: 5px solid papayawhip; */
+}
+.hero {
+  background-color: rgba(255, 239, 213, 0.4);
+}
+.footer {
+  background-color: rgba(255, 239, 213, 0.4);
+  color: white;
+  margin-top: 3em;
+}
+/* .logo {
+  width: 100px;
+  height:100px;
+} */
+.title {
+  color: white;
+}
+.subtitle {
+  color: white;
+  text-align: center;
+}
+.image-thumbnails {
+  color: white;
+  background-color: rgba(255, 239, 213, 0.4);
+  /* border: 5px solid papayawhip; */
+  margin: 3em 0;
+}
+.glow {
+  color: #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.glow-box {
+  color: #fff;
+  animation: glow-box 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+@keyframes glow-box {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }
