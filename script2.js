@@ -1,18 +1,28 @@
 // Open the Modal
 const modal = document.querySelectorAll('.modal');
+const modal1 = document.getElementById('myModal1');
+const modal2 = document.getElementById('myModal2');
+const modal3 = document.getElementById('myModal3');
+const modal4 = document.getElementById('myModal4');
+const box = document.getElementById('portfolio');
+function modalZoomOut() {
+  return box.classList.toggle('content-zoom-in');
+}
 function openModal1() {
-  return document.getElementById('myModal1').style.display = 'block';
+  box.classList.toggle('content-zoom-in');
+  setTimeout(function(){
+    modal1.style.display = 'block';
+  }, 500);
 }
 function openModal2() {
-  return document.getElementById('myModal2').style.display = 'block';
+  return modal2.style.display = 'block';
 }
 function openModal3() {
-  return document.getElementById('myModal3').style.display = 'block';
+  return modal3.style.display = 'block';
 }
 function openModal4() {
-  return document.getElementById('myModal4').style.display = 'block';
+  return modal4.style.display = 'block';
 }
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
