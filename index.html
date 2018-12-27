@@ -5,119 +5,291 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   </head>
   <body>
-    <main>
+    <main id="main">
       <header class="hero">
         <div class="hero-body">
-          <div class="container">
-            <h1 class="title">Portfolio</h1>
+          <div class="level">
+            <h1 class="title level-left glow">Grant Wilkinson's Portfolio</h1>
+            <span class="image is-64x64 level-right">
+              <img src="http://www.best4balls.com/media/catalog/product/cache/1/thumbnail/700x/9df78eab33525d08d6e5fb8d27136e95/s/i/silly-face.png" alt="silly">
+            </span>
           </div>
         </div>
-      </header>
-      <article>
-        <p>
-          Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore
-          et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore
-          eu fugiat nulla pariatur. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
-        </p>
+        </header>
+        <nav class="navbar glow-box">
+          <div class="navbar-brand">
+            <div class="navbar-item logo">
+              <img class="box-glow" src="https://i.imgur.com/f1ciwd2.png?2" alt="logo">
+            </div>
+          </div>
+          <div class="navbar-end">
+            <a href="#about" class="navbar-item glow">About</a>
+            <a href="#portfolio" class="navbar-item glow">Projects</a>
+            <a href="#contact" class="navbar-item glow">Contact</a>
+          </div>
+        </nav>
+      <article class="columns is-centered">
+        <div class="column is-8 about glow-box">
+          <h2 id="about" class="subtitle is-2 glow">About</h2>
+          <p>Thanks for taking the time to check out my portfolio.</p>
+          <p>I'm from London and have just finished the Immersive Web Development course at GA.</p>
+          <p>Really enjoying coding and just wish I'd gotten into it sooner.</p>
+          <p>I'm currently looking for new opportunities as a Junior Developer.</p>
+          <br>
+        </div>
       </article>
-      <div>
-        <a href="https://makebook.herokuapp.com">MakeBook</a>
-        <h2 class="button open-modal subtitle" id="makebookDesktop">Desktop Images</h2>
+      <section class="columns is-centered" id="box">
+        <div class="columns column is-10 is-multiline image-thumbnails glow-box is-centered" id="portfolio">
+          <h2 class="subtitle is-2 column is-12 glow">My Projects</h2>
+          <article>
+            <p>I have arranged the projects starting from the most recent</p>
+            <p>I like to think that my projects say something about me and maybe they do, who knows?</p><br>
+            <p><strong class="glow">MakeBook</strong> is my most recent project and even though it doesn't look amazing
+              at the moment. I am in the process of making it prettier and more user friendly. So watch this space!</p>
+            <br>
+          </article>
+          <p>Click on one of the images to see screenshots and info about each one. I hope you like them.</p>
+          <div class="column is-8 fade">
+            <img src="https://i.imgur.com/nV5cMtn.png" onclick="openModal1();currentSlide(1)" class="hover-shadow">
+            <div class="middle">
+              <p class="text glow">MakeBook</p>
+            </div>
+          </div>
+          <div class="column is-8 fade">
+            <img src="https://i.imgur.com/VusU94H.png" onclick="openModal2();currentSlide(5)" class="hover-shadow">
+            <div class="middle">
+              <p class="text glow">Events</p>
+            </div>
+          </div>
+          <div class="column is-8 fade">
+            <img src="https://i.imgur.com/jhmLXUq.png" onclick="openModal3();currentSlide(9)" class="hover-shadow">
+            <div class="middle">
+              <p class="text glow">MangaBook</p>
+            </div>
+          </div>
+          <div class="column is-8 fade">
+            <img src="https://i.imgur.com/mN2mfhm.png" onclick="openModal4();currentSlide(13)" class="hover-shadow">
+            <div class="middle">
+              <p class="text glow">Codebusters</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <div id="modal1" class="modal">
+      <div class="caption-container">
+        <span>This is the <span id="caption1"></span></span>
+        <span class="close-box">Click outside the box to close</span>
       </div>
-      <section class="modal modal1" id="makebookDesktopModal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <div>
-            <img src="https://i.imgur.com/nV5cMtn.png" alt="screenshot of story page desktop">
-            <img src="https://i.imgur.com/XSLiFvF.png" alt="screenshot of register page desktop">
-            <img src="https://i.imgur.com/DZW70Ax.png" alt="screenshot of login page desktop">
-            <img src="https://i.imgur.com/jcVo9NA.png" alt="screenshot of page index desktop">
-            <img src="https://i.imgur.com/cYCebmE.png" alt="screenshot of create page desktop">
-            <img src="https://i.imgur.com/iWAD0El.png" alt="screenshot of create choice desktop">
+      <div class="modal-content columns is-centered">
+        <section class="main-image column is-8">
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img class="glow-box" src="https://i.imgur.com/nV5cMtn.png" style="width:100%">
           </div>
-          <button class="modal-close is-large" aria-label="close" id="modalClose"></button>
-        </div>
-      </section>
-      <h2 class="button open-modal subtitle" id="makebookMobile">Mobile Images</h2>
-      <section class="modal modal2" id="makebookMobileModal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <div>
-            <img src="https://i.imgur.com/FCYVqg5.png" alt="screenshot of story page mobile">
-            <img src="https://i.imgur.com/ZOfjfrF.png" alt="screenshot of register page mobile">
-            <img src="https://i.imgur.com/T2JjSdy.png" alt="screenshot of login page mobile">
-            <img src="https://i.imgur.com/yKgFYE8.png" alt="screenshot of page index mobile">
-            <img src="https://i.imgur.com/cWikwvO.png" alt="screenshot of create page mobile">
-            <img src="https://i.imgur.com/4pPBXnr.png" alt="screenshot of create choice mobile">
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img class="glow-box" src="https://i.imgur.com/jcVo9NA.png" style="width:100%">
           </div>
-          <button class="modal-close is-large" aria-label="close" id="modalClose"></button>
-        </div>
-      </section>
-      <div>
-        <a href="https://wdi-events-project.herokuapp.com/#!/events"><h2>Events</h2></a>
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img class="glow-box" src="https://i.imgur.com/cYCebmE.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img class="glow-box" src="https://i.imgur.com/iWAD0El.png" style="width:100%">
+          </div>
+          <article class="content">
+              <p>
+              For this project I decided to make an app
+              where you can create your own adventure
+              game-book and read all the books that have been
+              created by other users.
+              The most difficult aspect of this project for me
+              was trying to work out how the user
+              would link the pages together through choices at
+              the bottom of the page. At present the app does
+              what it is supposed to but is not as user friendly
+              as I would like. I am most proud of the fact that
+              by changing states rather than changing urls for
+              the page changes, the reader of the created books can’t
+              cheat and go back a page as it takes you back to
+              the start of the book .
+              I still have some bugs to fix.
+              </p>
+          </article>
+        </section>
+        <!-- Thumbnail image controls -->
+        <section class="column is-2 is-fixed-top">
+          <div class="column ">
+            <img class="demo glow-box" src="https://i.imgur.com/nV5cMtn.png" onclick="currentSlide(1)" alt="Story page for Desktop">
+          </div>
+          <div class="column">
+            <img class="demo glow-box" src="https://i.imgur.com/jcVo9NA.png" onclick="currentSlide(2)" alt="Page Index for Desktop">
+          </div>
+          <div class="column">
+            <img class="demo glow-box" src="https://i.imgur.com/cYCebmE.png" onclick="currentSlide(3)" alt="Page Create page for Desktop">
+          </div>
+          <div class="column">
+            <img class="demo glow-box" src="https://i.imgur.com/iWAD0El.png" onclick="currentSlide(4)" alt="Choice Create page for Desktop">
+          </div>
+        </section>
       </div>
-      <h2 class="button open-modal subtitle" id="events">Images</h2>
-      <section class="modal modal3" id="eventsModal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <div>
-            <img src="https://i.imgur.com/VusU94H.png" alt="screenshot of event index">
-            <img src="https://i.imgur.com/iAy79Fn.png" alt="screenshot of event show">
-            <img src="https://i.imgur.com/3bb5hsX.png" alt="screenshot of profile page">
-            <img src="https://i.imgur.com/icL5SkZ.png" alt="screenshot of event create">
-          </div>
-          <button class="modal-close is-large" aria-label="close" id="modalClose"></button>
-        </div>
-      </section>
-      <div>
-        <a href="https://manga-book.herokuapp.com/mangas"><h2>MangaBook</h2></a>
+    </div>
+    <div id="modal2" class="modal">
+      <div class="caption-container">
+        <p>This is the <span id="caption2"></span></p>
       </div>
-      <h2 class="button open-modal subtitle" id="mangaBook">Images</h2>
-      <section class="modal modal4" id="mangaModal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <div>
-            <img src="https://i.imgur.com/QU5QmgM.png" alt="screenshot of manga-book review mobile">
-            <img src="https://i.imgur.com/jhmLXUq.png" alt="screenshot of manga-book login mobile">
-            <img src="https://i.imgur.com/ireYISb.png" alt="screenshot of manga-book rating and character add mobile">
-            <img src="https://i.imgur.com/XChuEP9.png" alt="screenshot of manga-book index mobile">
-            <img src="https://i.imgur.com/Dk7kTYJ.png" alt="screenshot of manga-book home page desktop">
+      <div class="modal-content columns is-centered is-vcentered">
+        <section class="main-image column is-8">
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="https://i.imgur.com/VusU94H.png" style="width:100%">
           </div>
-          <button class="modal-close is-large" aria-label="close" id="modalClose"></button>
-        </div>
-      </section>
-      <div>
-        <a href="https://gmwilkinson.github.io/codebusters/"><h2>Codebusters</h2></a>
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="https://i.imgur.com/iAy79Fn.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="https://i.imgur.com/3bb5hsX.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="https://i.imgur.com/icL5SkZ.png" style="width:100%">
+          </div>
+        </section>
+        <section class="column is-2 thumbnails">
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/VusU94H.png" onclick="currentSlide(5)" alt="Event Index for Mobile">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/iAy79Fn.png" onclick="currentSlide(6)" alt="Event Show for Mobile">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/3bb5hsX.png" onclick="currentSlide(7)" alt="Profile Page for Mobile">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/icL5SkZ.png" onclick="currentSlide(8)" alt="Create Event page for Mobile">
+          </div>
+        </section>
       </div>
-      <h2 class="button open-modal subtitle" id="codebusters">Images</h2>
-      <section class="modal modal5" id="codebustersModal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <div class="">
-            <img src="https://i.imgur.com/mN2mfhm.png" alt="screenshot of codebusters board not in play">
-            <img src="https://i.imgur.com/DpEigWg.png" alt="screenshot of codebusters question">
-            <img src="https://i.imgur.com/SrZg8Kq.png" alt="screenshot of codebusters game in play">
-            <img src="https://i.imgur.com/P7jK6mO.png" alt="screenshot of codebusters correct answer">
-            <img src="https://i.imgur.com/60RTbS9.png" alt="screenshot of codebusters wrong answer">
+    </div>
+    <div id="modal3" class="modal">
+      <div class="caption-container">
+        <p>This is the <span id="caption3"></span></p>
+      </div>
+      <div class="modal-content columns is-centered is-vcentered">
+        <section class="main-image column is-8">
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="https://i.imgur.com/jhmLXUq.png" style="width:100%">
           </div>
-          <button class="modal-close is-large" aria-label="close" id="modalClose"></button>
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="https://i.imgur.com/QU5QmgM.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="https://i.imgur.com/ireYISb.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="https://i.imgur.com/XChuEP9.png" style="width:100%">
+          </div>
+        </section>
+        <section class="column is-2 thumbnails">
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/jhmLXUq.png" onclick="currentSlide(9)" alt="Login page for Mobile">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/QU5QmgM.png" onclick="currentSlide(10)" alt="Review page for Mobile">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/ireYISb.png" onclick="currentSlide(11)" alt="Ratings and Character Add page for Mobile">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/XChuEP9.png" onclick="currentSlide(12)" alt="Index page for Mobile">
+          </div>
+        </section>
+      </div>
+    </div>
+    <div id="modal4" class="modal">
+      <div class="caption-container">
+        <p>This is the <span id="caption4"></span></p>
+      </div>
+      <div class="modal-content columns is-centered is-vcentered">
+        <section class="main-image column is-8">
+          <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="https://i.imgur.com/mN2mfhm.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="https://i.imgur.com/DpEigWg.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="https://i.imgur.com/SrZg8Kq.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="https://i.imgur.com/P7jK6mO.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="https://i.imgur.com/60RTbS9.png" style="width:100%">
+          </div>
+        </section>
+        <section class="column is-2 thumbnails">
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/mN2mfhm.png" onclick="currentSlide(13)" alt="Game Board">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/DpEigWg.png" onclick="currentSlide(14)" alt="Question page">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/SrZg8Kq.png" onclick="currentSlide(15)" alt="Game in Play">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/P7jK6mO.png" onclick="currentSlide(16)" alt="Correct Answer page">
+          </div>
+          <div class="column">
+            <img class="demo" src="https://i.imgur.com/60RTbS9.png" onclick="currentSlide(17)" alt="Wrong Answer page">
+          </div>
+        </section>
+      </div>
+    </div>
+    <section class="columns is-centered is-vcentered" id="contact">
+      <article class="column is-8 about glow-box">
+        <h2 class="glow subtitle is-2">Contact</h2>
+        <p>If you fancy a chat or a coffee feel free to contact me at</p>
+        <p><strong class="glow">wilkinsonmgrant@gmail.com</strong></p>
+        <p>Or at one of the links below</p>
+        <p></p>
+      </article>
+    </section>
+  </main>
+  <footer class="footer glow-box">
+    <div class="content has-text-centered">
+      <p>Made by GMWilkinson using HTML, CSS3, JavaScript and Bulma</p>
+      <div class="columns is-centered">
+        <div class="column is-2 columns">
+          <div class="column is-6">
+            <a href="https://www.linkedin.com/in/gmwilkinson/" target="_blank" class="image is-64x64">
+              <img src="https://sguru.org/wp-content/uploads/2018/02/linkedin-logo-hd-png-3.png" alt="linkedin logo">
+            </a>
+          </div>
+          <div class="column is-6">
+            <a href="https://github.com/GMWilkinson" target="_blank" class="image is-64x64">
+              <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="github logo">
+            </a>
+          </div>
         </div>
-      </section>
-    </main>
-    <script type="text/javascript" src="script.js">
-
-    </script>
-  </body>
-
-
-  </script>
-</html>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="script.js"></script>
+</body>
