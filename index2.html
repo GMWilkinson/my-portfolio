@@ -33,16 +33,23 @@
       <article class="columns is-centered">
         <div class="column is-8 about glow-box">
           <h2 id="about" class="subtitle is-2 glow">About</h2>
-        <p>Hello and thanks for taking the time to check out my portfolio.</p>
-        <p>I like to think that my projects say something about me and maybe they do, who knows?</p>
-        <hr>
-        <p><strong>MakeBook</strong> is my most recent project and even though it doesn't look amazing
-          at the moment. I am in the process of making it prettier and more user friendly. So watch this space!</p>
-      </div>
+          <p>Thanks for taking the time to check out my portfolio.</p>
+          <p>I'm from London and have just finished the Immersive Web Development course at GA.</p>
+          <p>Really enjoying coding and just wish I'd gotten into it sooner.</p>
+          <br>
+        </div>
       </article>
-      <section class="columns is-centered">
+      <section class="columns is-centered" id="box">
         <div class="columns column is-10 is-multiline image-thumbnails glow-box is-centered" id="portfolio">
           <h2 class="subtitle is-2 column is-12 glow">My Projects</h2>
+          <article>
+            <p>I have arranged the projects starting from the most recent</p>
+            <p>I like to think that my projects say something about me and maybe they do, who knows?</p><br>
+            <p><strong class="glow">MakeBook</strong> is my most recent project and even though it doesn't look amazing
+              at the moment. I am in the process of making it prettier and more user friendly. So watch this space!</p>
+            <br>
+          </article>
+          <p>Click on one of the images to see screenshots and info about each one. I hope you like them.</p>
           <div class="column is-5">
             <h3>MakeBook</h3>
             <img src="https://i.imgur.com/nV5cMtn.png" onclick="openModal1();currentSlide(1)" class="hover-shadow glow-box">
@@ -61,28 +68,27 @@
           </div>
         </div>
       </section>
-      <!-- The Modal/Lightbox -->
-    <div id="myModal1" class="modal">
+    <div id="modal1" class="modal">
       <div class="caption-container">
-        <p id="caption1"></p>
+        <p>This is the <span id="caption1"></span></p>
       </div>
-      <div class="modal-content glow-box columns is-centered">
-        <section class="main-image column is-8 is-vcentered">
+      <div class="modal-content columns is-centered">
+        <section class="main-image column is-8">
           <div class="mySlides">
             <div class="numbertext">1 / 4</div>
-            <img src="https://i.imgur.com/nV5cMtn.png" style="width:100%">
+            <img class="glow-box" src="https://i.imgur.com/nV5cMtn.png" style="width:100%">
           </div>
           <div class="mySlides">
             <div class="numbertext">2 / 4</div>
-            <img src="https://i.imgur.com/jcVo9NA.png" style="width:100%">
+            <img class="glow-box" src="https://i.imgur.com/jcVo9NA.png" style="width:100%">
           </div>
           <div class="mySlides">
             <div class="numbertext">3 / 4</div>
-            <img src="https://i.imgur.com/cYCebmE.png" style="width:100%">
+            <img class="glow-box" src="https://i.imgur.com/cYCebmE.png" style="width:100%">
           </div>
           <div class="mySlides">
             <div class="numbertext">4 / 4</div>
-            <img src="https://i.imgur.com/iWAD0El.png" style="width:100%">
+            <img class="glow-box" src="https://i.imgur.com/iWAD0El.png" style="width:100%">
           </div>
           <article class="content">
               <p>
@@ -100,30 +106,30 @@
               the page changes, the reader of the created books can’t
               cheat and go back a page as it takes you back to
               the start of the book .
-              I have still have some bugs to fix.
+              I still have some bugs to fix.
               </p>
           </article>
         </section>
         <!-- Thumbnail image controls -->
-        <section class="column is-2 thumbnails">
-          <div class="column">
-            <img class="demo" src="https://i.imgur.com/nV5cMtn.png" onclick="currentSlide(1)" alt="Story page">
+        <section class="column is-2 is-fixed-top">
+          <div class="column ">
+            <img class="demo glow-box" src="https://i.imgur.com/nV5cMtn.png" onclick="currentSlide(1)" alt="Story page">
           </div>
           <div class="column">
-            <img class="demo" src="https://i.imgur.com/jcVo9NA.png" onclick="currentSlide(2)" alt="Page Index">
+            <img class="demo glow-box" src="https://i.imgur.com/jcVo9NA.png" onclick="currentSlide(2)" alt="Page Index">
           </div>
           <div class="column">
-            <img class="demo" src="https://i.imgur.com/cYCebmE.png" onclick="currentSlide(3)" alt="Page Create">
+            <img class="demo glow-box" src="https://i.imgur.com/cYCebmE.png" onclick="currentSlide(3)" alt="Page Create">
           </div>
           <div class="column">
-            <img class="demo" src="https://i.imgur.com/iWAD0El.png" onclick="currentSlide(4)" alt="Choice Create">
+            <img class="demo glow-box" src="https://i.imgur.com/iWAD0El.png" onclick="currentSlide(4)" alt="Choice Create">
           </div>
         </section>
       </div>
     </div>
-    <div id="myModal2" class="modal">
+    <div id="modal2" class="modal">
       <div class="caption-container">
-        <p id="caption2"></p>
+        <p>This is the <span id="caption2"></span></p>
       </div>
       <div class="modal-content columns is-centered is-vcentered">
         <section class="main-image column is-8">
@@ -160,9 +166,9 @@
         </section>
       </div>
     </div>
-    <div id="myModal3" class="modal">
+    <div id="modal3" class="modal">
       <div class="caption-container">
-        <p id="caption3"></p>
+        <p>This is the <span id="caption3"></span></p>
       </div>
       <div class="modal-content columns is-centered is-vcentered">
         <section class="main-image column is-8">
@@ -199,9 +205,9 @@
         </section>
       </div>
     </div>
-    <div id="myModal4" class="modal">
+    <div id="modal4" class="modal">
       <div class="caption-container">
-        <p id="caption4"></p>
+        <p>This is the <span id="caption4"></span></p>
       </div>
       <div class="modal-content columns is-centered is-vcentered">
         <section class="main-image column is-8">
@@ -245,6 +251,12 @@
         </section>
       </div>
     </div>
+    <section class="columns is-centered is-vcentered">
+      <article class="column is-8">
+        <p>I'm currently looking for new opportunities as a Junior Developer.</p>
+        <p>Feel free to contact me at <strong class="glow">wilkinsonmgrant@gmail.com</strong></p>
+      </article>
+    </section>
   </main>
   <footer class="footer glow-box">
     <div class="content has-text-centered">

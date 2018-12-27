@@ -1,32 +1,54 @@
-// Open the Modal
+
 const modal = document.querySelectorAll('.modal');
-const modal1 = document.getElementById('myModal1');
-const modal2 = document.getElementById('myModal2');
-const modal3 = document.getElementById('myModal3');
-const modal4 = document.getElementById('myModal4');
-const box = document.getElementById('portfolio');
-function modalZoomOut() {
-  return box.classList.toggle('content-zoom-in');
-}
+const modal1 = document.getElementById('modal1');
+const modal2 = document.getElementById('modal2');
+const modal3 = document.getElementById('modal3');
+const modal4 = document.getElementById('modal4');
+const box = document.getElementById('box');
+
 function openModal1() {
   box.classList.toggle('content-zoom-in');
   setTimeout(function(){
     modal1.style.display = 'block';
+    box.classList.toggle('content-zoom-in');
   }, 500);
 }
 function openModal2() {
-  return modal2.style.display = 'block';
+  box.classList.toggle('content-zoom-in');
+  setTimeout(function(){
+    modal2.style.display = 'block';
+    box.classList.toggle('content-zoom-in');
+  }, 500);
 }
 function openModal3() {
-  return modal3.style.display = 'block';
+  box.classList.add('content-zoom-in');
+  setTimeout(function(){
+    modal3.style.display = 'block';
+    box.classList.toggle('content-zoom-in');
+  }, 500);
 }
 function openModal4() {
-  return modal4.style.display = 'block';
+  box.classList.toggle('content-zoom-in');
+  setTimeout(function(){
+    modal4.style.display = 'block';
+    box.classList.toggle('content-zoom-in');
+  }, 500);
 }
+// function openModal1() {
+//   return modal1.style.display = 'block';
+// }
+// function openModal2() {
+//   return modal2.style.display = 'block';
+// }
+// function openModal3() {
+//   return modal3.style.display = 'block';
+// }
+// function openModal4() {
+//   return modal4.style.display = 'block';
+// }
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
