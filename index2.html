@@ -80,7 +80,8 @@
       </section>
     <div id="modal1" class="modal">
       <div class="caption-container">
-        <p>This is the <span id="caption1"></span></p>
+        <span>This is the <span id="caption1"></span></span>
+        <span class="close-box">Click outside the box to close</span>
       </div>
       <div class="modal-content columns is-centered">
         <section class="main-image column is-8">
@@ -123,16 +124,16 @@
         <!-- Thumbnail image controls -->
         <section class="column is-2 is-fixed-top">
           <div class="column ">
-            <img class="demo glow-box" src="https://i.imgur.com/nV5cMtn.png" onclick="currentSlide(1)" alt="Story page">
+            <img class="demo glow-box" src="https://i.imgur.com/nV5cMtn.png" onclick="currentSlide(1)" alt="Story page for Desktop">
           </div>
           <div class="column">
-            <img class="demo glow-box" src="https://i.imgur.com/jcVo9NA.png" onclick="currentSlide(2)" alt="Page Index">
+            <img class="demo glow-box" src="https://i.imgur.com/jcVo9NA.png" onclick="currentSlide(2)" alt="Page Index for Desktop">
           </div>
           <div class="column">
-            <img class="demo glow-box" src="https://i.imgur.com/cYCebmE.png" onclick="currentSlide(3)" alt="Page Create">
+            <img class="demo glow-box" src="https://i.imgur.com/cYCebmE.png" onclick="currentSlide(3)" alt="Page Create page for Desktop">
           </div>
           <div class="column">
-            <img class="demo glow-box" src="https://i.imgur.com/iWAD0El.png" onclick="currentSlide(4)" alt="Choice Create">
+            <img class="demo glow-box" src="https://i.imgur.com/iWAD0El.png" onclick="currentSlide(4)" alt="Choice Create page for Desktop">
           </div>
         </section>
       </div>
@@ -162,16 +163,16 @@
         </section>
         <section class="column is-2 thumbnails">
           <div class="column">
-            <img class="demo" src="https://i.imgur.com/VusU94H.png" onclick="currentSlide(5)" alt="Event Index">
+            <img class="demo" src="https://i.imgur.com/VusU94H.png" onclick="currentSlide(5)" alt="Event Index for Mobile">
           </div>
           <div class="column">
-            <img class="demo" src="https://i.imgur.com/iAy79Fn.png" onclick="currentSlide(6)" alt="Event Show">
+            <img class="demo" src="https://i.imgur.com/iAy79Fn.png" onclick="currentSlide(6)" alt="Event Show for Mobile">
           </div>
           <div class="column">
-            <img class="demo" src="https://i.imgur.com/3bb5hsX.png" onclick="currentSlide(7)" alt="Profile Page">
+            <img class="demo" src="https://i.imgur.com/3bb5hsX.png" onclick="currentSlide(7)" alt="Profile Page for Mobile">
           </div>
           <div class="column">
-            <img class="demo" src="https://i.imgur.com/icL5SkZ.png" onclick="currentSlide(8)" alt="Create Event">
+            <img class="demo" src="https://i.imgur.com/icL5SkZ.png" onclick="currentSlide(8)" alt="Create Event page for Mobile">
           </div>
         </section>
       </div>
@@ -201,16 +202,16 @@
         </section>
         <section class="column is-2 thumbnails">
           <div class="column">
-            <img class="demo" src="https://i.imgur.com/jhmLXUq.png" onclick="currentSlide(9)" alt="Login">
+            <img class="demo" src="https://i.imgur.com/jhmLXUq.png" onclick="currentSlide(9)" alt="Login page for Mobile">
           </div>
           <div class="column">
-            <img class="demo" src="https://i.imgur.com/QU5QmgM.png" onclick="currentSlide(10)" alt="Review">
+            <img class="demo" src="https://i.imgur.com/QU5QmgM.png" onclick="currentSlide(10)" alt="Review page for Mobile">
           </div>
           <div class="column">
-            <img class="demo" src="https://i.imgur.com/ireYISb.png" onclick="currentSlide(11)" alt="Ratings and Character Add">
+            <img class="demo" src="https://i.imgur.com/ireYISb.png" onclick="currentSlide(11)" alt="Ratings and Character Add page for Mobile">
           </div>
           <div class="column">
-            <img class="demo" src="https://i.imgur.com/XChuEP9.png" onclick="currentSlide(12)" alt="Index">
+            <img class="demo" src="https://i.imgur.com/XChuEP9.png" onclick="currentSlide(12)" alt="Index page for Mobile">
           </div>
         </section>
       </div>
@@ -247,16 +248,16 @@
             <img class="demo" src="https://i.imgur.com/mN2mfhm.png" onclick="currentSlide(13)" alt="Game Board">
           </div>
           <div class="column">
-            <img class="demo" src="https://i.imgur.com/DpEigWg.png" onclick="currentSlide(14)" alt="Question">
+            <img class="demo" src="https://i.imgur.com/DpEigWg.png" onclick="currentSlide(14)" alt="Question page">
           </div>
           <div class="column">
             <img class="demo" src="https://i.imgur.com/SrZg8Kq.png" onclick="currentSlide(15)" alt="Game in Play">
           </div>
           <div class="column">
-            <img class="demo" src="https://i.imgur.com/P7jK6mO.png" onclick="currentSlide(16)" alt="Correct Answer">
+            <img class="demo" src="https://i.imgur.com/P7jK6mO.png" onclick="currentSlide(16)" alt="Correct Answer page">
           </div>
           <div class="column">
-            <img class="demo" src="https://i.imgur.com/60RTbS9.png" onclick="currentSlide(17)" alt="Wrong Answer">
+            <img class="demo" src="https://i.imgur.com/60RTbS9.png" onclick="currentSlide(17)" alt="Wrong Answer page">
           </div>
         </section>
       </div>
@@ -274,8 +275,20 @@
   <footer class="footer glow-box">
     <div class="content has-text-centered">
       <p>Made by GMWilkinson using HTML, CSS3, JavaScript and Bulma</p>
-      <a href="#">LinkdIn</a>
-      <a href="#">GitHub</a>
+      <div class="columns is-centered">
+        <div class="column is-2 columns">
+          <div class="column is-6">
+            <a href="https://www.linkedin.com/in/gmwilkinson/" target="_blank" class="image is-64x64">
+              <img src="https://sguru.org/wp-content/uploads/2018/02/linkedin-logo-hd-png-3.png" alt="linkedin logo">
+            </a>
+          </div>
+          <div class="column is-6">
+            <a href="https://github.com/GMWilkinson" target="_blank" class="image is-64x64">
+              <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="github logo">
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
   <script type="text/javascript" src="script2.js"></script>
