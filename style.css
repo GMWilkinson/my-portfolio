@@ -4,7 +4,7 @@ body {
   background-image: url('https://i.pinimg.com/originals/ed/e5/87/ede587a3c4083da1c79d9d4c17178301.jpg');
   background-size: cover;
   background-attachment: fixed;
-  color: #fff;
+  color: #fffdfa;
 }
 h3 {
   font-size: 20px;
@@ -76,7 +76,7 @@ img.demo {
 }
 img.hover-shadow {
   transition: 0.3s;
-  border: 2px solid papayawhip;
+  /* border: 2px solid papayawhip; */
   /* border-radius: 5%; */
 }
 .hover-shadow:hover {
@@ -106,17 +106,28 @@ a:hover {
 }
 .about {
   text-align: center;
-  padding: 50px 10px;
-  margin-top: 3em;
-  margin-bottom: 2em;
+  padding: 150px 100px;
+  margin: 3em 0 2em 0;
+  /* margin-bottom: 2em; */
   font-size: 25px;
-  background-color: rgba(255, 239, 213, 0.4);
+  background-color: #fffdfa;
+}
+.subtitle, .about {
+  padding-top: 25px;
+}
+p {
+  font-family: sans-serif;
+}
+p, .about {
+  color: #999999;
+  padding: 6px;
+  /* font-family: sans-serif; */
 }
 .hero {
-  background-color: rgba(255, 239, 213, 0.4);
+  background-color: #fffdfa;
 }
 .footer {
-  background-color: rgba(255, 239, 213, 0.4);
+  background-color: #fffdfa;
   margin-top: 3em;
 }
 .title {
@@ -124,9 +135,18 @@ a:hover {
 .subtitle {
   text-align: center;
 }
-.image-thumbnails {
-  background-color: rgba(255, 239, 213, 0.4);
-  margin: 3em 0;
+.projects {
+  background-color: #fffdfa;
+  margin: 3em 0 0 0;
+  padding: 1em;
+}
+.projects2 {
+  background-color: #fffdfa;
+  margin: 0 0 3em 0;
+  padding: 1em;
+}
+.image-thumbnail-background {
+  background-color: black;
 }
 article, .image-thumbnails {
   text-align: center;
@@ -187,6 +207,7 @@ article, .image-thumbnails {
 .fade {
   position: relative;
   width: 50%;
+  margin: 20px 0;
 }
 .middle {
   transition: .5s ease;

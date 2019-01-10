@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
@@ -13,17 +14,17 @@
         <div class="hero-body">
           <div class="level">
             <h1 class="title level-left glow">Grant Wilkinson's Portfolio</h1>
-            <span class="image is-64x64 level-right">
+            <!-- <span class="image is-64x64 level-right">
               <img src="http://www.best4balls.com/media/catalog/product/cache/1/thumbnail/700x/9df78eab33525d08d6e5fb8d27136e95/s/i/silly-face.png" alt="silly">
-            </span>
+            </span> -->
           </div>
         </div>
         </header>
         <nav class="navbar glow-box">
           <div class="navbar-brand">
-            <div class="navbar-item logo">
+            <!-- <div class="navbar-item logo">
               <img class="box-glow" src="https://i.imgur.com/f1ciwd2.png?2" alt="logo">
-            </div>
+            </div> -->
           </div>
           <div class="navbar-end">
             <a href="#about" class="navbar-item glow">About</a>
@@ -32,51 +33,58 @@
           </div>
         </nav>
       <article class="columns is-centered">
-        <div class="column is-8 about glow-box">
+        <div class="column is-12 about glow-box">
           <h2 id="about" class="subtitle is-2 glow">About</h2>
           <p>Thanks for taking the time to check out my portfolio.</p>
           <p>I'm from London and have just finished the Immersive Web Development course at GA.</p>
           <p>Really enjoying coding and just wish I'd gotten into it sooner.</p>
           <p>I'm currently looking for new opportunities as a Junior Developer.</p>
-          <br>
+          <!-- <br> -->
         </div>
       </article>
       <section class="columns is-centered" id="box">
-        <div class="columns column is-10 is-multiline image-thumbnails glow-box is-centered" id="portfolio">
-          <h2 class="subtitle is-2 column is-12 glow">My Projects</h2>
-          <article>
-            <p>I have arranged the projects starting from the most recent</p>
-            <p>I like to think that my projects say something about me and maybe they do, who knows?</p><br>
-            <p><strong class="glow">MakeBook</strong> is my most recent project and even though it doesn't look amazing
-              at the moment. I am in the process of making it prettier and more user friendly. So watch this space!</p>
-            <br>
-          </article>
-          <p>Click on one of the images to see screenshots and info about each one. I hope you like them.</p>
-          <div class="column is-8 fade">
+        <div class="columns column is-12 is-multiline is-centered" id="portfolio">
+          <div class="projects glow-box">
+            <h2 class="subtitle is-2 column is-12 glow">My Projects</h2>
+            <article>
+              <p>I have arranged the projects starting from the most recent</p>
+              <p><strong class="glow">MakeBook</strong> is my most recent project and even though it doesn't look amazing
+                at the moment. I am in the process of making it prettier and more user friendly. So watch this space!</p>
+              <br>
+              <p>Click on one of the images to see screenshots and info about each one. I hope you like them.</p>
+            </article>
+          </div>
+        <div class="image-thumbnails-background columns">
+          <div class="column is-3 fade">
             <img src="https://i.imgur.com/nV5cMtn.png" onclick="openModal1();currentSlide(1)" class="hover-shadow">
             <div class="middle">
               <p class="text glow">MakeBook</p>
             </div>
           </div>
-          <div class="column is-8 fade">
+          <div class="column is-3 fade">
             <img src="https://i.imgur.com/VusU94H.png" onclick="openModal2();currentSlide(5)" class="hover-shadow">
             <div class="middle">
               <p class="text glow">Events</p>
             </div>
           </div>
-          <div class="column is-8 fade">
+          <div class="column is-3 fade">
             <img src="https://i.imgur.com/jhmLXUq.png" onclick="openModal3();currentSlide(9)" class="hover-shadow">
             <div class="middle">
               <p class="text glow">MangaBook</p>
             </div>
           </div>
-          <div class="column is-8 fade">
+          <div class="column is-3 fade">
             <img src="https://i.imgur.com/mN2mfhm.png" onclick="openModal4();currentSlide(13)" class="hover-shadow">
             <div class="middle">
               <p class="text glow">Codebusters</p>
             </div>
           </div>
         </div>
+        <article class="projects2 glow-box column is-12">
+          <p>I like to think that my projects say something about me and maybe they do, who knows?</p>
+          <p>I was given seven days to complete each project.</p>
+        </article>
+      </div>
       </section>
     <div id="modal1" class="modal">
       <div class="caption-container">
@@ -310,7 +318,7 @@
       </div>
     </div>
     <section class="columns is-centered is-vcentered" id="contact">
-      <article class="column is-8 about glow-box">
+      <article class="column is-12 about glow-box">
         <h2 class="glow subtitle is-2">Contact</h2>
         <p>If you fancy a chat or a coffee feel free to contact me at</p>
         <p><strong class="glow">wilkinsonmgrant@gmail.com</strong></p>
