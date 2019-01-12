@@ -106,12 +106,18 @@ a:hover {
 }
 .about {
   text-align: center;
-  padding: 150px 100px;
+  /* padding: 300px 100px; */
   margin: 3em 0 2em 0;
-  /* margin-bottom: 2em; */
   font-size: 25px;
+  border: 40px solid #fffdfa;
+  border-radius: 2%;
+}
+.about-text {
+  margin: 40px;
+  padding: 30px;
   background-color: #fffdfa;
 }
+
 .subtitle, .about {
   padding-top: 25px;
 }
@@ -124,28 +130,36 @@ p, .about {
   /* font-family: sans-serif; */
 }
 .hero {
-  background-color: #fffdfa;
+  /* background-color: #fffdfa; */
+  border-top: 30px solid #fffdfa;
+  border-right: 300px solid #fffdfa;
+  border-bottom: 30px solid #fffdfa;
+  border-left: 10px solid #fffdfa;
 }
 .footer {
   background-color: #fffdfa;
   margin-top: 3em;
 }
 .title {
+  background-color: #fffdfa;
+  padding: 20px 400px 20px 10px;
 }
 .subtitle {
   text-align: center;
 }
 .projects {
-  background-color: #fffdfa;
+  /* background-color: #fffdfa; */
+  border: 40px solid #fffdfa;
   margin: 3em 0 0 0;
   padding: 1em;
 }
 .projects2 {
-  background-color: #fffdfa;
+  /* background-color: #fffdfa; */
   margin: 0 0 3em 0;
   padding: 1em;
+  border: 40px solid #fffdfa;
 }
-.image-thumbnail-background {
+.image-thumbnail {
   background-color: black;
 }
 article, .image-thumbnails {
@@ -188,14 +202,14 @@ article, .image-thumbnails {
 }
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #e60073, 0 0 10px #e60073, 0 0 12px #e60073, 0 0 15px #e60073, 0 0 17px #e60073;
   }
 
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 5px #fff, 0 0 7px #ff4da6, 0 0 10px #ff4da6, 0 0 12px #ff4da6, 0 0 15px #ff4da6, 0 0 17px #ff4da6, 0 0 20px #ff4da6;
   }
 }
-@keyframes glow-box {
+/* @keyframes glow-box {
   from {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   }
@@ -203,7 +217,7 @@ article, .image-thumbnails {
   to {
     box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
-}
+} */
 .fade {
   position: relative;
   width: 50%;
