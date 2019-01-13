@@ -146,6 +146,12 @@ p, .about {
 }
 .subtitle {
   text-align: center;
+  font-size: 40px;
+}
+.image-box {
+  border: 40px solid #fffdfa;
+  margin: 3em 0 0 0;
+  padding: 1em;
 }
 .projects {
   /* background-color: #fffdfa; */
@@ -159,9 +165,9 @@ p, .about {
   padding: 1em;
   border: 40px solid #fffdfa;
 }
-.image-thumbnail {
+/* .image-thumbnail {
   background-color: black;
-}
+} */
 article, .image-thumbnails {
   text-align: center;
   font-size: 25px;
@@ -237,5 +243,51 @@ article, .image-thumbnails {
   opacity: 1;
 }
 .text {
-  font-size: 50px;
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+}
+.linkedin {
+  align-self: flex-end;
+}
+@media(max-width: 400px) {
+  p {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .hero {
+    display: none;
+  }
+  .about {
+    margin: 2em 0 1em 0;
+    border: 30px solid #fffdfa;
+  }
+  .about-text {
+    margin: 5px;
+    padding: 15px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+  .image-box {
+    border: 20px solid #fffdfa;
+    margin: 0 0 0 0;
+  }
+  .text {
+    font-size: 25px;
+  }
+  /* .about-text {
+    margin: 15px;
+    padding: 10px;
+  } */
+  .projects2 {
+    margin: 0 0 2em 0;
+    padding: 1em;
+    border: 10px solid #fffdfa;
+  }
 }

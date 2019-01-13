@@ -32,7 +32,7 @@
       <article class="columns is-centered">
         <div class="column is-12 about">
           <div class="about-text">
-            <h2 id="about" class="subtitle is-2 glow">About</h2>
+            <h2 id="about" class="subtitle glow">About</h2>
             <p>Thanks for taking the time to check out my portfolio.</p>
             <p>I'm from London and have just finished the Immersive Web Development course at GA.</p>
             <p>Really enjoying coding and just wish I'd gotten into it sooner.</p>
@@ -45,7 +45,7 @@
         <div class="columns column is-12 is-multiline is-centered" id="portfolio">
           <div class="projects glow-box">
             <article class="about-text">
-              <h2 class="subtitle is-2 column is-12 glow">My Projects</h2>
+              <h2 class="subtitle column is-12 glow">My Projects</h2>
               <p>I have arranged the projects starting from the most recent</p>
               <p><strong class="glow">MakeBook</strong> is my most recent project and even though it doesn't look amazing
                 at the moment. I am in the process of making it prettier and more user friendly. So watch this space!</p>
@@ -53,38 +53,40 @@
               <p>Click on one of the images to see screenshots and info about each one. I hope you like them.</p>
             </article>
           </div>
-        <div class="image-thumbnails columns">
-          <div class="column is-3 fade">
-            <img src="https://i.imgur.com/nV5cMtn.png" onclick="openModal1();currentSlide(1)" class="hover-shadow">
-            <div class="middle">
-              <p class="text glow">MakeBook</p>
+        <section class="image-thumbnails">
+          <div class="image-box columns is-multiline is-mobile is-centered">
+            <div class="column is-3-desktop is-12-mobile fade">
+              <img src="https://i.imgur.com/nV5cMtn.png" onclick="openModal1();currentSlide(1)" class="hover-shadow">
+              <div class="">
+                <p class="text glow">MakeBook</p>
+              </div>
             </div>
-          </div>
-          <div class="column is-3 fade">
-            <img src="https://i.imgur.com/VusU94H.png" onclick="openModal2();currentSlide(5)" class="hover-shadow">
-            <div class="middle">
-              <p class="text glow">Events</p>
+            <div class="column is-3-desktop is-12-mobile fade">
+              <img src="https://i.imgur.com/VusU94H.png" onclick="openModal2();currentSlide(5)" class="hover-shadow">
+              <div class="">
+                <p class="text glow">Events</p>
+              </div>
             </div>
-          </div>
-          <div class="column is-3 fade">
-            <img src="https://i.imgur.com/jhmLXUq.png" onclick="openModal3();currentSlide(9)" class="hover-shadow">
-            <div class="middle">
-              <p class="text glow">MangaBook</p>
+            <div class="column is-3-desktop is-12-mobile fade">
+              <img src="https://i.imgur.com/jhmLXUq.png" onclick="openModal3();currentSlide(9)" class="hover-shadow">
+              <div class="">
+                <p class="text glow">MangaBook</p>
+              </div>
             </div>
-          </div>
-          <div class="column is-3 fade">
-            <img src="https://i.imgur.com/mN2mfhm.png" onclick="openModal4();currentSlide(13)" class="hover-shadow">
-            <div class="middle">
-              <p class="text glow">Codebusters</p>
+            <div class="column is-3-desktop is-12-mobile fade">
+              <img src="https://i.imgur.com/mN2mfhm.png" onclick="openModal4();currentSlide(13)" class="hover-shadow">
+              <div class="">
+                <p class="text glow">Codebusters</p>
+              </div>
             </div>
+            <article class="projects2 glow-box column is-12">
+              <div class="about-text">
+                <p>I like to think that my projects say something about me and maybe they do, who knows?</p>
+                <p>I was given seven days to complete each project.</p>
+              </div>
+            </article>
           </div>
-        </div>
-        <article class="projects2 glow-box column is-12">
-          <div class="about-text">
-            <p>I like to think that my projects say something about me and maybe they do, who knows?</p>
-            <p>I was given seven days to complete each project.</p>
-          </div>
-        </article>
+        </section>
       </div>
       </section>
     <div id="modal1" class="modal">
@@ -321,7 +323,7 @@
     <section class="columns is-centered is-vcentered" id="contact">
       <article class="column is-12 about glow-box">
         <div class="about-text">
-          <h2 class="glow subtitle is-2">Contact</h2>
+          <h2 class="glow subtitle">Contact</h2>
           <p>If you fancy a chat or a coffee feel free to contact me at</p>
           <p><strong class="glow">wilkinsonmgrant@gmail.com</strong></p>
           <p>Or at one of the links below</p>
@@ -333,18 +335,16 @@
   <footer class="footer glow-box">
     <div class="content has-text-centered">
       <p>Made by GMWilkinson using HTML, CSS3, JavaScript and Bulma</p>
-      <div class="columns is-centered">
-        <div class="column is-2 columns">
-          <div class="column is-6">
-            <a href="https://www.linkedin.com/in/gmwilkinson/" target="_blank" class="image is-64x64">
-              <img src="https://sguru.org/wp-content/uploads/2018/02/linkedin-logo-hd-png-3.png" alt="linkedin logo">
-            </a>
-          </div>
-          <div class="column is-6">
-            <a href="https://github.com/GMWilkinson" target="_blank" class="image is-64x64">
-              <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="github logo">
-            </a>
-          </div>
+      <div class="level">
+        <div class="level-item has-text-centered">
+          <a href="https://www.linkedin.com/in/gmwilkinson/" target="_blank" class="image is-64x64">
+            <img src="https://sguru.org/wp-content/uploads/2018/02/linkedin-logo-hd-png-3.png" alt="linkedin logo">
+          </a>
+        </div>
+        <div class="level-item has-text-centered">
+          <a href="https://github.com/GMWilkinson" target="_blank" class="image is-64x64">
+            <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="github logo">
+          </a>
         </div>
       </div>
     </div>
