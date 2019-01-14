@@ -41,13 +41,18 @@ h3 {
   width: 80%;
   height: 70%;
   max-width: 1200px;
+  border: 20px solid #fffdfa;
   animation-name: zoom;
   animation-duration: 0.5s;
 }
-/* .main-image {
-  opacity: 1;
-} */
-.mySlides {
+.main-image {
+}
+.content {
+  /* border-left: 20px solid #fffdfa;
+  border-right: 20px solid #fffdfa; */
+  background-color: #fffdfa;
+}
+.slides {
   display: none;
 }
 .thumbnails {
@@ -62,9 +67,16 @@ h3 {
 }
 .caption-container {
   text-align: center;
-  color: hotpink;
   font-size: 34px;
   top: 0;
+}
+.demo div{
+  width: 100%;
+  padding: 0;
+}
+.lightbox-images {
+  width: 100%;
+  padding: 0;
 }
 img.demo {
   opacity: 0.6;
@@ -130,11 +142,11 @@ p, .about {
   /* font-family: sans-serif; */
 }
 .hero {
-  /* background-color: #fffdfa; */
-  border-top: 30px solid #fffdfa;
+  background-color: #fffdfa;
+  /* border-top: 30px solid #fffdfa;
   border-right: 300px solid #fffdfa;
   border-bottom: 30px solid #fffdfa;
-  border-left: 10px solid #fffdfa;
+  border-left: 10px solid #fffdfa; */
 }
 .footer {
   background-color: #fffdfa;
