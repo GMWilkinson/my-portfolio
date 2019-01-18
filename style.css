@@ -39,13 +39,11 @@ h3 {
   margin: auto;
   padding: 0;
   width: 80%;
-  height: 70%;
+  height: 80%;
   max-width: 1200px;
   border: 20px solid #fffdfa;
   animation-name: zoom;
   animation-duration: 0.5s;
-}
-.main-image {
 }
 .content {
   /* border-left: 20px solid #fffdfa;
@@ -129,7 +127,17 @@ a:hover {
   padding: 30px;
   background-color: #fffdfa;
 }
-
+.skills-box {
+  text-align: center;
+  margin: 40px;
+  font-size: 25px;
+  border: 40px solid #fffdfa;
+}
+.skills {
+  margin: 40px;
+  padding: 30px;
+  background-color: #fffdfa;
+}
 .subtitle, .about {
   padding-top: 25px;
 }
