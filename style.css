@@ -173,6 +173,9 @@ p, .about {
   border-bottom: 30px solid #fffdfa;
   border-left: 10px solid #fffdfa; */
 }
+.mob-title {
+  display: none;
+}
 .footer {
   background-color: #fffdfa;
   margin-top: 3em;
@@ -302,6 +305,12 @@ article, .image-thumbnails {
   }
   .hero {
     display: none;
+  }
+  .mob-title {
+    display: block;
+  }
+  .hero-body {
+    height: 20px;
   }
   .about {
     margin: 2em 0 1em 0;

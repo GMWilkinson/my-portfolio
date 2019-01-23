@@ -24,6 +24,7 @@
             </div> -->
           </div>
           <div class="navbar-end">
+            <h1 class="glow mob-title">Grant Wilkinson</h1>
             <a href="#about" class="navbar-item glow">About</a>
             <a href="#portfolio" class="navbar-item glow">Projects</a>
             <a href="#contact" class="navbar-item glow">Contact</a>
@@ -126,7 +127,7 @@
     <div id="modal1" class="modal">
       <div class="caption-container glow">
         <span>This is the <span id="caption1"></span></span>
-        <span class="close cursor" onclick="closeModal()">X</span>
+        <span class="close cursor" onclick="closeModal1()">X</span>
       </div>
       <div class="modal-content columns is-centered">
         <h3 class="subtitle glow is-5"><a href="https://makebook.herokuapp.com/">Click here to go to MakeBook</a></h3>
@@ -219,7 +220,7 @@
     <div id="modal2" class="modal">
       <div class="caption-container glow">
         <span>This is the <span id="caption2"></span></span>
-        <span class="close-box">Click outside the box to close</span>
+        <span class="close cursor" onclick="closeModal2()">X</span>
       </div>
       <div class="modal-content columns is-centered">
         <h3 class="subtitle glow is-5"><a href="https://wdi-events-project.herokuapp.com/#!/events">Click here to go to Events</a></h3>
@@ -288,10 +289,24 @@
     <div id="modal3" class="modal">
       <div class="caption-container glow">
         <span>This is the <span id="caption3"></span></span>
-        <span class="close-box">Click outside the box to close</span>
+        <span class="close cursor" onclick="closeModal3()">X</span>
       </div>
       <div class="modal-content columns is-centered">
         <h3 class="subtitle glow is-5"><a href="https://manga-book.herokuapp.com/">Click here to go to MangaBook</a></h3>
+        <section class="column is-2 thumbnails lightbox-images">
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/jhmLXUq.png" onclick="currentSlide(9)" alt="Login page for Mobile">
+          </div>
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/QU5QmgM.png" onclick="currentSlide(10)" alt="Review page for Mobile">
+          </div>
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/ireYISb.png" onclick="currentSlide(11)" alt="Ratings and Character Add page for Mobile">
+          </div>
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/XChuEP9.png" onclick="currentSlide(12)" alt="Index page for Mobile">
+          </div>
+        </section>
         <section class="main-image column is-8">
           <div class="slides">
             <div class="numbertext">1 / 4</div>
@@ -323,7 +338,7 @@
             </p>
           </article>
         </section>
-        <section class="column is-2 thumbnails">
+        <!-- <section class="column is-2 thumbnails">
           <div class="column gap">
             <img class="demo glow-box" src="https://i.imgur.com/jhmLXUq.png" onclick="currentSlide(9)" alt="Login page for Mobile">
           </div>
@@ -336,16 +351,33 @@
           <div class="column gap">
             <img class="demo glow-box" src="https://i.imgur.com/XChuEP9.png" onclick="currentSlide(12)" alt="Index page for Mobile">
           </div>
-        </section>
+        </section> -->
       </div>
     </div>
     <div id="modal4" class="modal">
       <div class="caption-container glow">
         <span>This is the <span id="caption4"></span></span>
-        <span class="close-box">Click outside the box to close</span>
+        <span class="close cursor" onclick="closeModal4()">X</span>
       </div>
       <div class="modal-content columns is-centered">
         <h3 class="subtitle glow is-5"><a href="https://gmwilkinson.github.io/codebusters/">Click here to go to Codebusters</a></h3>
+        <section class="column is-2 thumbnails lightbox-images">
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/mN2mfhm.png" onclick="currentSlide(13)" alt="Game Board">
+          </div>
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/DpEigWg.png" onclick="currentSlide(14)" alt="Question page">
+          </div>
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/SrZg8Kq.png" onclick="currentSlide(15)" alt="Game in Play">
+          </div>
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/P7jK6mO.png" onclick="currentSlide(16)" alt="Correct Answer page">
+          </div>
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/60RTbS9.png" onclick="currentSlide(17)" alt="Wrong Answer page">
+          </div>
+        </section>
         <section class="main-image column is-8">
           <div class="slides">
             <div class="numbertext">1 / 5</div>
@@ -382,7 +414,7 @@
             </p>
           </article>
         </section>
-        <section class="column is-2 thumbnails">
+        <!-- <section class="column is-2 thumbnails">
           <div class="column gap">
             <img class="demo glow-box" src="https://i.imgur.com/mN2mfhm.png" onclick="currentSlide(13)" alt="Game Board">
           </div>
@@ -398,7 +430,7 @@
           <div class="column gap">
             <img class="demo glow-box" src="https://i.imgur.com/60RTbS9.png" onclick="currentSlide(17)" alt="Wrong Answer page">
           </div>
-        </section>
+        </section> -->
       </div>
     </div>
     <section class="columns is-centered is-vcentered" id="contact">

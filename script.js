@@ -5,6 +5,11 @@ const modal2 = document.getElementById('modal2');
 const modal3 = document.getElementById('modal3');
 const modal4 = document.getElementById('modal4');
 const box = document.getElementById('box');
+const close1 = document.getElementById('close1');
+const close2 = document.getElementById('close2');
+const close3 = document.getElementById('close3');
+const close4 = document.getElementById('close4');
+const closeArray = [close1, close2, close3, close4];
 
 function openModal1() {
   box.classList.toggle('content-zoom-in');
@@ -34,8 +39,18 @@ function openModal4() {
     box.classList.toggle('content-zoom-in');
   }, 500);
 }
-function closeModal() {
-  document.getElementById('modal1').style.display = 'none';
+
+function closeModal1() {
+  document.getElementById('modal1').style.display = "none";
+}
+function closeModal2() {
+  document.getElementById('modal2').style.display = "none";
+}
+function closeModal3() {
+  document.getElementById('modal3').style.display = "none";
+}
+function closeModal4() {
+  document.getElementById('modal4').style.display = "none";
 }
 
 let slideIndex = 1;
