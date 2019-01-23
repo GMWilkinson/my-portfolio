@@ -45,6 +45,21 @@ h3 {
   animation-name: zoom;
   animation-duration: 0.5s;
 }
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: papayawhip;
+  text-decoration: none;
+  cursor: pointer;
+}
 .content {
   /* border-left: 20px solid #fffdfa;
   border-right: 20px solid #fffdfa; */
@@ -116,11 +131,10 @@ a:hover {
 }
 .about {
   text-align: center;
-  /* padding: 300px 100px; */
-  margin: 3em 0 2em 0;
+  /* margin: 3em 0 2em 0; */
+  margin: 40px;
   font-size: 25px;
   border: 40px solid #fffdfa;
-  border-radius: 2%;
 }
 .about-text {
   margin: 40px;
@@ -136,6 +150,9 @@ a:hover {
 .skills {
   margin: 40px;
   padding: 30px;
+
+}
+.skills-list {
   background-color: #fffdfa;
 }
 .subtitle, .about {
@@ -181,7 +198,7 @@ p, .about {
 }
 .projects2 {
   /* background-color: #fffdfa; */
-  margin: 0 0 3em 0;
+  margin: 40px;
   padding: 1em;
   border: 40px solid #fffdfa;
 }
@@ -271,6 +288,9 @@ article, .image-thumbnails {
   align-self: flex-end;
 }
 @media(max-width: 400px) {
+  .navbar {
+    position: static;
+  }
   p {
     font-size: 12px;
   }
@@ -288,7 +308,7 @@ article, .image-thumbnails {
     border: 30px solid #fffdfa;
   }
   .about-text {
-    margin: 5px;
+    margin: 10px;
     padding: 15px;
   }
   .subtitle {
@@ -296,7 +316,7 @@ article, .image-thumbnails {
   }
   .image-box {
     border: 20px solid #fffdfa;
-    margin: 0 0 0 0;
+    margin: 20px 0 0 0;
   }
   .text {
     font-size: 25px;
@@ -309,5 +329,37 @@ article, .image-thumbnails {
     margin: 0 0 2em 0;
     padding: 1em;
     border: 10px solid #fffdfa;
+  }
+  .skills-box {
+    margin: 10px;
+    font-size: 10px;
+    border: 20px solid #fffdfa;
+  }
+  .skills {
+    margin: 20px;
+    padding: 10px;
+  }
+  .li {
+    font-size: 10px;
+  }
+  .modal-content {
+    position: relative;
+    border: 10px solid #fffdfa;
+  }
+  .lightbox-images {
+    display: flex;
+    justify-content: flex-start;
+    /* position: relative; */
+  }
+  .caption-container {
+    font-size: 25px;
+  }
+  .demo {
+    /* position: absolute; */
+    display: inline-block;
+    top: 0;
+  }
+  .gap {
+    padding: .25rem;
   }
 }

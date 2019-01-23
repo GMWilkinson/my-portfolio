@@ -37,13 +37,14 @@
             <p>I'm from London and have just finished the Immersive Web Development course at GA.</p>
             <p>Really enjoying coding and just wish I'd gotten into it sooner.</p>
             <p>I'm currently looking for new opportunities as a Junior Developer.</p>
-            <!-- <br> -->
           </div>
           <section class="skills-box">
-            <div class="skills">
+            <div class="column is-12">
               <h2 class="subtitle glow">Skills</h2>
+            </div>
+            <div class="skills">
               <div class="columns">
-                <div class="skills-list column is-6">
+                <div class="skills-list column is-5">
                   <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -55,7 +56,9 @@
                     <li>jQuery</li>
                   </ul>
                 </div>
-                <div class="skills-list column is-6">
+                <div class="column is-2">
+                </div>
+                <div class="skills-list column is-5">
                   <ul>
                     <li>Trello</li>
                     <li>Insomnia</li>
@@ -110,7 +113,7 @@
                 <p class="text glow">Codebusters</p>
               </div>
             </div>
-            <article class="projects2 glow-box column is-12">
+            <article class="skills-box glow-box column">
               <div class="about-text">
                 <p>I like to think that my projects say something about me and maybe they do, who knows?</p>
                 <p>I was given seven days to complete each project.</p>
@@ -123,10 +126,24 @@
     <div id="modal1" class="modal">
       <div class="caption-container glow">
         <span>This is the <span id="caption1"></span></span>
-        <span class="close-box">Click outside the box to close</span>
+        <span class="close cursor" onclick="closeModal()">X</span>
       </div>
       <div class="modal-content columns is-centered">
         <h3 class="subtitle glow is-5"><a href="https://makebook.herokuapp.com/">Click here to go to MakeBook</a></h3>
+        <section class="column is-2 lightbox-images">
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/nV5cMtn.png" onclick="currentSlide(1)" alt="Story page for Desktop">
+          </div>
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/jcVo9NA.png" onclick="currentSlide(2)" alt="Page Index for Desktop">
+          </div>
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/cYCebmE.png" onclick="currentSlide(3)" alt="Page Create page for Desktop">
+          </div>
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/iWAD0El.png" onclick="currentSlide(4)" alt="Choice Create page for Desktop">
+          </div>
+        </section>
         <section class="main-image column is-8">
           <div class="slides">
             <div class="numbertext">1 / 4</div>
@@ -144,6 +161,20 @@
             <div class="numbertext">4 / 4</div>
             <img class="glow-box" src="https://i.imgur.com/iWAD0El.png" style="width:100%">
           </div>
+          <!-- <section class="column is-2 lightbox-images">
+            <div class="column ">
+              <img class="demo glow-box" src="https://i.imgur.com/nV5cMtn.png" onclick="currentSlide(1)" alt="Story page for Desktop">
+            </div>
+            <div class="column">
+              <img class="demo glow-box" src="https://i.imgur.com/jcVo9NA.png" onclick="currentSlide(2)" alt="Page Index for Desktop">
+            </div>
+            <div class="column">
+              <img class="demo glow-box" src="https://i.imgur.com/cYCebmE.png" onclick="currentSlide(3)" alt="Page Create page for Desktop">
+            </div>
+            <div class="column">
+              <img class="demo glow-box" src="https://i.imgur.com/iWAD0El.png" onclick="currentSlide(4)" alt="Choice Create page for Desktop">
+            </div>
+          </section> -->
           <article class="content">
             <p>
               This project is made using Node.js, MongoDB, Express,
@@ -169,7 +200,7 @@
             </p>
           </article>
         </section>
-        <section class="column is-2 lightbox-images">
+        <!-- <section class="column is-2 lightbox-images">
           <div class="column ">
             <img class="demo glow-box" src="https://i.imgur.com/nV5cMtn.png" onclick="currentSlide(1)" alt="Story page for Desktop">
           </div>
@@ -182,7 +213,7 @@
           <div class="column">
             <img class="demo glow-box" src="https://i.imgur.com/iWAD0El.png" onclick="currentSlide(4)" alt="Choice Create page for Desktop">
           </div>
-        </section>
+        </section> -->
       </div>
     </div>
     <div id="modal2" class="modal">
@@ -192,6 +223,20 @@
       </div>
       <div class="modal-content columns is-centered">
         <h3 class="subtitle glow is-5"><a href="https://wdi-events-project.herokuapp.com/#!/events">Click here to go to Events</a></h3>
+        <section class="column is-2 lightbox-images">
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/VusU94H.png" onclick="currentSlide(5)" alt="Event Index for Mobile">
+          </div>
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/iAy79Fn.png" onclick="currentSlide(6)" alt="Event Show for Mobile">
+          </div>
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/3bb5hsX.png" onclick="currentSlide(7)" alt="Profile Page for Mobile">
+          </div>
+          <div class="column gap">
+            <img class="demo glow-box" src="https://i.imgur.com/icL5SkZ.png" onclick="currentSlide(8)" alt="Create Event page for Mobile">
+          </div>
+        </section>
         <section class="main-image column is-8">
           <div class="slides">
             <div class="numbertext">1 / 4</div>
@@ -224,7 +269,7 @@
             </p>
           </article>
         </section>
-        <section class="column is-2 thumbnails">
+        <!-- <section class="column is-2 thumbnails">
           <div class="column">
             <img class="demo glow-box" src="https://i.imgur.com/VusU94H.png" onclick="currentSlide(5)" alt="Event Index for Mobile">
           </div>
@@ -237,7 +282,7 @@
           <div class="column">
             <img class="demo glow-box" src="https://i.imgur.com/icL5SkZ.png" onclick="currentSlide(8)" alt="Create Event page for Mobile">
           </div>
-        </section>
+        </section> -->
       </div>
     </div>
     <div id="modal3" class="modal">
@@ -279,16 +324,16 @@
           </article>
         </section>
         <section class="column is-2 thumbnails">
-          <div class="column">
+          <div class="column gap">
             <img class="demo glow-box" src="https://i.imgur.com/jhmLXUq.png" onclick="currentSlide(9)" alt="Login page for Mobile">
           </div>
-          <div class="column">
+          <div class="column gap">
             <img class="demo glow-box" src="https://i.imgur.com/QU5QmgM.png" onclick="currentSlide(10)" alt="Review page for Mobile">
           </div>
-          <div class="column">
+          <div class="column gap">
             <img class="demo glow-box" src="https://i.imgur.com/ireYISb.png" onclick="currentSlide(11)" alt="Ratings and Character Add page for Mobile">
           </div>
-          <div class="column">
+          <div class="column gap">
             <img class="demo glow-box" src="https://i.imgur.com/XChuEP9.png" onclick="currentSlide(12)" alt="Index page for Mobile">
           </div>
         </section>
@@ -338,19 +383,19 @@
           </article>
         </section>
         <section class="column is-2 thumbnails">
-          <div class="column">
+          <div class="column gap">
             <img class="demo glow-box" src="https://i.imgur.com/mN2mfhm.png" onclick="currentSlide(13)" alt="Game Board">
           </div>
-          <div class="column">
+          <div class="column gap">
             <img class="demo glow-box" src="https://i.imgur.com/DpEigWg.png" onclick="currentSlide(14)" alt="Question page">
           </div>
-          <div class="column">
+          <div class="column gap">
             <img class="demo glow-box" src="https://i.imgur.com/SrZg8Kq.png" onclick="currentSlide(15)" alt="Game in Play">
           </div>
-          <div class="column">
+          <div class="column gap">
             <img class="demo glow-box" src="https://i.imgur.com/P7jK6mO.png" onclick="currentSlide(16)" alt="Correct Answer page">
           </div>
-          <div class="column">
+          <div class="column gap">
             <img class="demo glow-box" src="https://i.imgur.com/60RTbS9.png" onclick="currentSlide(17)" alt="Wrong Answer page">
           </div>
         </section>

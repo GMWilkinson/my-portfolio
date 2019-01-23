@@ -34,6 +34,10 @@ function openModal4() {
     box.classList.toggle('content-zoom-in');
   }, 500);
 }
+function closeModal() {
+  document.getElementById('modal1').style.display = 'none';
+}
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
