@@ -9,458 +9,174 @@
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   </head>
   <body>
-    <main id="main">
-      <header class="hero">
-        <div class="hero-body">
-          <div class="level">
-            <h1 class="title level-left glow">Grant Wilkinson's Portfolio</h1>
+    <header class="header">
+      <section class="title-box">
+        <div>
+          <div class="">
+            <h1 class="title">Grant Wilkinson's Portfolio</h1>
           </div>
         </div>
-        </header>
-        <nav class="navbar glow-box">
-          <div class="navbar-brand">
-            <!-- <div class="navbar-item logo">
-              <img class="box-glow" src="https://i.imgur.com/f1ciwd2.png?2" alt="logo">
-            </div> -->
-          </div>
-          <div class="navbar-end">
-            <h1 class="glow mob-title">Grant Wilkinson</h1>
-            <a href="#about" class="navbar-item glow">About</a>
-            <a href="#portfolio" class="navbar-item glow">Projects</a>
-            <a href="#contact" class="navbar-item glow">Contact</a>
-          </div>
-        </nav>
-      <article class="columns is-centered">
-        <div class="column is-12 about">
-          <div class="about-text">
-            <h2 id="about" class="subtitle glow">About</h2>
+      </section>
+    </header>
+    <nav class="navbar glow-box">
+      <div class="navbar-brand">
+      </div>
+      <div class="navbar-end is-centered">
+        <div class="link-box column is-vcentered">
+          <a href="#about" class="">About</a>
+        </div>
+        <div class="link-box column is-vcentered">
+          <a href="#portfolio" class="">Portfolio</a>
+        </div>
+        <div class="link-box column is-vcentered">
+          <a href="#contact" class="">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="columns about">
+      <article class="column is-three-fifths is-offset-one-fifth">
+        <div class="subtitle-box">
+          <h2 class="subtitle about-subtitle" id="about">About</h2>
+        </div>
+          <div class="text-box">
             <p>Thanks for taking the time to check out my portfolio.</p>
             <p>I'm from London and have just finished the Immersive Web Development course at GA. I'm now starting to learn C# as it seems really interesting.</p>
             <p>Really enjoying coding and just wish I'd gotten into it sooner.</p>
             <p>I'm currently looking for new opportunities as a Junior Developer.</p>
           </div>
-          <section class="skills-box">
-            <div class="column is-12">
-              <h2 class="subtitle glow">Skills</h2>
-            </div>
-            <div class="skills">
-              <div class="columns">
-                <div class="skills-list column is-5">
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Bulma</li>
-                    <li>Node.js</li>
-                    <li>AngularJS</li>
-                    <li>jQuery</li>
-                  </ul>
-                </div>
-                <div class="column is-2">
-                </div>
-                <div class="skills-list column is-5">
-                  <ul>
-                    <li>Trello</li>
-                    <li>Insomnia</li>
-                    <li>GitHub</li>
-                    <li>Heroku</li>
-                    <li>JSON</li>
-                    <li>Mongoose</li>
-                    <li>MongoDB</li>
-                    <li>Express</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
       </article>
-      <section class="columns is-centered" id="box">
-        <div class="columns column is-12 is-multiline is-centered" id="portfolio">
-          <div class="projects glow-box">
-            <article class="about-text">
-              <h2 class="subtitle column is-12 glow">My Projects</h2>
-              <!-- <p>I have arranged the projects starting from the most recent</p> -->
-              <p><strong class="glow">MakeBook</strong> is my most recent project and even though it doesn't look amazing
-                at the moment, I am in the process of making it prettier and more user friendly. So watch this space!</p>
-              <br>
-              <p>Click on one of the images to see screenshots and info about each one. I hope you will like them.</p>
-            </article>
-          </div>
-        <section class="image-thumbnails">
-          <div class="image-box columns is-multiline is-mobile is-centered">
-            <div class="column is-3-desktop is-12-mobile fade">
-              <img src="https://i.imgur.com/nV5cMtn.png" onclick="openModal1();currentSlide(1)" class="hover-shadow">
-              <div class="">
-                <p class="text glow">MakeBook</p>
-              </div>
-            </div>
-            <div class="column is-3-desktop is-12-mobile fade">
-              <img src="https://i.imgur.com/VusU94H.png" onclick="openModal2();currentSlide(5)" class="hover-shadow">
-              <div class="">
-                <p class="text glow">Events</p>
-              </div>
-            </div>
-            <div class="column is-3-desktop is-12-mobile fade">
-              <img src="https://i.imgur.com/jhmLXUq.png" onclick="openModal3();currentSlide(9)" class="hover-shadow">
-              <div class="">
-                <p class="text glow">MangaBook</p>
-              </div>
-            </div>
-            <div class="column is-3-desktop is-12-mobile fade">
-              <img src="https://i.imgur.com/mN2mfhm.png" onclick="openModal4();currentSlide(13)" class="hover-shadow">
-              <div class="">
-                <p class="text glow">Codebusters</p>
-              </div>
-            </div>
-            <article class="skills-box glow-box column">
-              <div class="about-text">
-                <p>I like to think that my projects say something about me and maybe they do, who knows?</p>
-                <p>I was given seven days to complete each project.</p>
-              </div>
-            </article>
-          </div>
-        </section>
-      </div>
-      </section>
-    <div id="modal1" class="modal">
-      <div class="caption-container glow">
-        <span>This is the <span id="caption1"></span></span>
-        <span class="close cursor" onclick="closeModal1()">X</span>
-      </div>
-      <div class="modal-content columns is-centered">
-        <h3 class="subtitle glow is-5"><a href="https://makebook.herokuapp.com/">Click here to go to MakeBook</a></h3>
-        <section class="column is-2 lightbox-images">
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/nV5cMtn.png" onclick="currentSlide(1)" alt="Story page for Desktop">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/jcVo9NA.png" onclick="currentSlide(2)" alt="Page Index for Desktop">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/cYCebmE.png" onclick="currentSlide(3)" alt="Page Create page for Desktop">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/iWAD0El.png" onclick="currentSlide(4)" alt="Choice Create page for Desktop">
-          </div>
-        </section>
-        <section class="main-image column is-8">
-          <div class="slides">
-            <div class="numbertext">1 / 4</div>
-            <img class="glow-box" src="https://i.imgur.com/nV5cMtn.png" style="width:100%">
-          </div>
-          <div class="slides">
-            <div class="numbertext">2 / 4</div>
-            <img class="glow-box" src="https://i.imgur.com/jcVo9NA.png" style="width:100%">
-          </div>
-          <div class="slides">
-            <div class="numbertext">3 / 4</div>
-            <img class="glow-box" src="https://i.imgur.com/cYCebmE.png" style="width:100%">
-          </div>
-          <div class="slides">
-            <div class="numbertext">4 / 4</div>
-            <img class="glow-box" src="https://i.imgur.com/iWAD0El.png" style="width:100%">
-          </div>
-          <!-- <section class="column is-2 lightbox-images">
-            <div class="column ">
-              <img class="demo glow-box" src="https://i.imgur.com/nV5cMtn.png" onclick="currentSlide(1)" alt="Story page for Desktop">
-            </div>
-            <div class="column">
-              <img class="demo glow-box" src="https://i.imgur.com/jcVo9NA.png" onclick="currentSlide(2)" alt="Page Index for Desktop">
-            </div>
-            <div class="column">
-              <img class="demo glow-box" src="https://i.imgur.com/cYCebmE.png" onclick="currentSlide(3)" alt="Page Create page for Desktop">
-            </div>
-            <div class="column">
-              <img class="demo glow-box" src="https://i.imgur.com/iWAD0El.png" onclick="currentSlide(4)" alt="Choice Create page for Desktop">
-            </div>
-          </section> -->
-          <article class="content">
-            <p>
-              This project is made using Node.js, MongoDB, Express,
-              ReactJS, JavaScript and SCSS.
-              I decided to make an app
-              where you can create your own adventure
-              game-book and read all the books that have been
-              created by other users.
-              The most difficult aspect of this project for me
-              was trying to work out how the creator of a book
-              would link the pages together through choices at
-              the bottom of the page. At present the app does
-              what it is supposed to but is not as user friendly
-              as I would like and the styling is not finished. I am most proud of the fact that
-              by changing states rather than changing urls for
-              the page changes, the reader of the created books can’t
-              cheat and go back a page as it takes you back to
-              the start of the book .
-              I still have some bugs to fix.
-              I am currently making a second version of this project that
-              I can put more time into, make it look much better
-              and fix all of the bugs.
-            </p>
-          </article>
-        </section>
-        <!-- <section class="column is-2 lightbox-images">
-          <div class="column ">
-            <img class="demo glow-box" src="https://i.imgur.com/nV5cMtn.png" onclick="currentSlide(1)" alt="Story page for Desktop">
-          </div>
-          <div class="column">
-            <img class="demo glow-box" src="https://i.imgur.com/jcVo9NA.png" onclick="currentSlide(2)" alt="Page Index for Desktop">
-          </div>
-          <div class="column">
-            <img class="demo glow-box" src="https://i.imgur.com/cYCebmE.png" onclick="currentSlide(3)" alt="Page Create page for Desktop">
-          </div>
-          <div class="column">
-            <img class="demo glow-box" src="https://i.imgur.com/iWAD0El.png" onclick="currentSlide(4)" alt="Choice Create page for Desktop">
-          </div>
-        </section> -->
-      </div>
     </div>
-    <div id="modal2" class="modal">
-      <div class="caption-container glow">
-        <span>This is the <span id="caption2"></span></span>
-        <span class="close cursor" onclick="closeModal2()">X</span>
+    <section class="columns skill-box">
+      <div class="box column is-3 is-offset-2">
+        <h3 class="tech-subtitle subtitle">Technologies</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Mongoose</li>
+          <li>MongoDB</li>
+          <li>Express</li>
+          <li>Node.js</li>
+          <li>AngularJS</li>
+          <li>SCSS</li>
+          <li>jQuery</li>
+        </ul>
       </div>
-      <div class="modal-content columns is-centered">
-        <h3 class="subtitle glow is-5"><a href="https://wdi-events-project.herokuapp.com/#!/events">Click here to go to Events</a></h3>
-        <section class="column is-2 lightbox-images">
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/VusU94H.png" onclick="currentSlide(5)" alt="Event Index for Mobile">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/iAy79Fn.png" onclick="currentSlide(6)" alt="Event Show for Mobile">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/3bb5hsX.png" onclick="currentSlide(7)" alt="Profile Page for Mobile">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/icL5SkZ.png" onclick="currentSlide(8)" alt="Create Event page for Mobile">
-          </div>
-        </section>
-        <section class="main-image column is-8">
-          <div class="slides">
-            <div class="numbertext">1 / 4</div>
-            <img class="glow-box" src="https://i.imgur.com/VusU94H.png" style="width:100%">
-          </div>
-          <div class="slides">
-            <div class="numbertext">2 / 4</div>
-            <img class="glow-box" src="https://i.imgur.com/iAy79Fn.png" style="width:100%">
-          </div>
-          <div class="slides">
-            <div class="numbertext">3 / 4</div>
-            <img class="glow-box" src="https://i.imgur.com/3bb5hsX.png" style="width:100%">
-          </div>
-          <div class="slides">
-            <div class="numbertext">4 / 4</div>
-            <img class="glow-box" src="https://i.imgur.com/icL5SkZ.png" style="width:100%">
-          </div>
-          <article class="content">
-            <p>
-              This is the first project that I've made as part of a team.
-              We used Node.js, MongoDB, Express, AngularJS, JavaScript, SCSS and HTML.
-              We decided to make an event planner app where the user can add,
-              join and comment on events.  We used OpenStreetMap and Nominatem
-              so that when the user adds an event a pin will be put on the
-              map at the event’s location on the show page.
-              This project was made mobile-first.
-              In the future this project would be made much more useful if
-              you could add friends and only the friends could see your events
-              and join them.
-            </p>
-          </article>
-        </section>
-        <!-- <section class="column is-2 thumbnails">
-          <div class="column">
-            <img class="demo glow-box" src="https://i.imgur.com/VusU94H.png" onclick="currentSlide(5)" alt="Event Index for Mobile">
-          </div>
-          <div class="column">
-            <img class="demo glow-box" src="https://i.imgur.com/iAy79Fn.png" onclick="currentSlide(6)" alt="Event Show for Mobile">
-          </div>
-          <div class="column">
-            <img class="demo glow-box" src="https://i.imgur.com/3bb5hsX.png" onclick="currentSlide(7)" alt="Profile Page for Mobile">
-          </div>
-          <div class="column">
-            <img class="demo glow-box" src="https://i.imgur.com/icL5SkZ.png" onclick="currentSlide(8)" alt="Create Event page for Mobile">
-          </div>
-        </section> -->
+      <div class="box column is-3 is-offset-2">
+        <h3 class="tech-subtitle subtitle">Methodologies</h3>
+        <ul class="">
+          <li>Trello</li>
+          <li>Insomnia</li>
+          <li>GitHub</li>
+          <li>Heroku</li>
+          <li>JSON</li>
+          <li>Bulma</li>
+          <li>Bootstrap</li>
+        </ul>
       </div>
-    </div>
-    <div id="modal3" class="modal">
-      <div class="caption-container glow">
-        <span>This is the <span id="caption3"></span></span>
-        <span class="close cursor" onclick="closeModal3()">X</span>
-      </div>
-      <div class="modal-content columns is-centered">
-        <h3 class="subtitle glow is-5"><a href="https://manga-book.herokuapp.com/">Click here to go to MangaBook</a></h3>
-        <section class="column is-2 thumbnails lightbox-images">
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/jhmLXUq.png" onclick="currentSlide(9)" alt="Login page for Mobile">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/QU5QmgM.png" onclick="currentSlide(10)" alt="Review page for Mobile">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/ireYISb.png" onclick="currentSlide(11)" alt="Ratings and Character Add page for Mobile">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/XChuEP9.png" onclick="currentSlide(12)" alt="Index page for Mobile">
-          </div>
-        </section>
-        <section class="main-image column is-8">
-          <div class="slides">
-            <div class="numbertext">1 / 4</div>
-            <img class="glow-box" src="https://i.imgur.com/jhmLXUq.png" style="width:100%">
-          </div>
-          <div class="slides">
-            <div class="numbertext">2 / 4</div>
-            <img class="glow-box" src="https://i.imgur.com/QU5QmgM.png" style="width:100%">
-          </div>
-          <div class="slides">
-            <div class="numbertext">3 / 4</div>
-            <img class="glow-box" src="https://i.imgur.com/ireYISb.png" style="width:100%">
-          </div>
-          <div class="slides">
-            <div class="numbertext">4 / 4</div>
-            <img class="glow-box" src="https://i.imgur.com/XChuEP9.png" style="width:100%">
-          </div>
-          <article class="content">
-            <p>
-              This is the first app that I made with a back-end. It is made with
-              Node.js, EJS, Express, MongoDB, JavaScript and CSS.
-              I decided to make a Manga review site as I am a huge Manga nerd.
-              You can register, login, logout, rate, add your own reviews and
-              leave comments.
-              This project was made mobile-first.
-              In the future I think this app would benefit greatly from
-              a table that placed each of the added books from top to bottom
-              in order of ratings.
-            </p>
-          </article>
-        </section>
-        <!-- <section class="column is-2 thumbnails">
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/jhmLXUq.png" onclick="currentSlide(9)" alt="Login page for Mobile">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/QU5QmgM.png" onclick="currentSlide(10)" alt="Review page for Mobile">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/ireYISb.png" onclick="currentSlide(11)" alt="Ratings and Character Add page for Mobile">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/XChuEP9.png" onclick="currentSlide(12)" alt="Index page for Mobile">
-          </div>
-        </section> -->
-      </div>
-    </div>
-    <div id="modal4" class="modal">
-      <div class="caption-container glow">
-        <span>This is the <span id="caption4"></span></span>
-        <span class="close cursor" onclick="closeModal4()">X</span>
-      </div>
-      <div class="modal-content columns is-centered">
-        <h3 class="subtitle glow is-5"><a href="https://gmwilkinson.github.io/codebusters/">Click here to go to Codebusters</a></h3>
-        <section class="column is-2 thumbnails lightbox-images">
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/mN2mfhm.png" onclick="currentSlide(13)" alt="Game Board">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/DpEigWg.png" onclick="currentSlide(14)" alt="Question page">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/SrZg8Kq.png" onclick="currentSlide(15)" alt="Game in Play">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/P7jK6mO.png" onclick="currentSlide(16)" alt="Correct Answer page">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/60RTbS9.png" onclick="currentSlide(17)" alt="Wrong Answer page">
-          </div>
-        </section>
-        <section class="main-image column is-8">
-          <div class="slides">
-            <div class="numbertext">1 / 5</div>
-            <img class="glow-box" src="https://i.imgur.com/mN2mfhm.png" style="width:100%">
-          </div>
-          <div class="slides">
-            <div class="numbertext">2 / 5</div>
-            <img class="glow-box" src="https://i.imgur.com/DpEigWg.png" style="width:100%">
-          </div>
-          <div class="slides">
-            <div class="numbertext">3 / 5</div>
-            <img class="glow-box" src="https://i.imgur.com/SrZg8Kq.png" style="width:100%">
-          </div>
-          <div class="slides">
-            <div class="numbertext">4 / 5</div>
-            <img class="glow-box" src="https://i.imgur.com/P7jK6mO.png" style="width:100%">
-          </div>
-          <div class="slides">
-            <div class="numbertext">5 / 5</div>
-            <img class="glow-box" src="https://i.imgur.com/60RTbS9.png" style="width:100%">
-          </div>
-          <article class="content">
-            <p>
-              This is my first project.
-              It uses HTML, CSS and JavaScript.
-              I decided to make a quiz game that asks questions
-              on HTML, CSS and JavaScript that increase in difficulty
-              for each correct answer you give.
-              My instructor at GA very kindly allowed me to use images of him for
-              the quizmaster character.
-              It is not even slightly responsive at the moment and there are some
-              bugs, such as the game doesn't end properly. But it
-              wouldn't be too hard to fix.
-            </p>
-          </article>
-        </section>
-        <!-- <section class="column is-2 thumbnails">
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/mN2mfhm.png" onclick="currentSlide(13)" alt="Game Board">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/DpEigWg.png" onclick="currentSlide(14)" alt="Question page">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/SrZg8Kq.png" onclick="currentSlide(15)" alt="Game in Play">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/P7jK6mO.png" onclick="currentSlide(16)" alt="Correct Answer page">
-          </div>
-          <div class="column gap">
-            <img class="demo glow-box" src="https://i.imgur.com/60RTbS9.png" onclick="currentSlide(17)" alt="Wrong Answer page">
-          </div>
-        </section> -->
-      </div>
-    </div>
-    <section class="columns is-centered is-vcentered" id="contact">
-      <article class="column is-12 about glow-box">
-        <div class="about-text">
-          <h2 class="glow subtitle">Contact</h2>
-          <p>If you fancy a chat or a coffee, feel free to contact me at</p>
-          <p><strong class="glow">wilkinsonmgrant@gmail.com</strong></p>
-          <p>You can also click on my GitHub or LinkedIn below, in the footer</p>
-          <p></p>
-        </div>
-      </article>
     </section>
-  </main>
-  <footer class="footer glow-box">
-    <div class="content has-text-centered">
-      <p>Made by GMWilkinson using HTML, CSS3, JavaScript and Bulma</p>
-      <div class="level">
-        <div class="level-item has-text-centered">
-          <a href="https://www.linkedin.com/in/gmwilkinson/" target="_blank" class="image is-64x64">
-            <img src="https://sguru.org/wp-content/uploads/2018/02/linkedin-logo-hd-png-3.png" alt="linkedin logo">
-          </a>
+    <section class="image-bar columns contact is-multiline">
+      <div class="column is-12 bar-box">
+        <h2 class="projects-subtitle subtitle" id="portfolio">My Projects</h2>
+      </div>
+      <div class="columns column is-12 contact-container">
+        <div class="column is-one-fifth image-bar-box">
+          <div class="contact-details bar-image1">
+
+          </div>
         </div>
-        <div class="level-item has-text-centered">
-          <a href="https://github.com/GMWilkinson" target="_blank" class="image is-64x64">
-            <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="github logo">
-          </a>
+        <div class="column is-one-fifth image-bar-box">
+          <div class="contact-details bar-image2">
+
+          </div>
+        </div>
+        <div class="column is-one-fifth image-bar-box">
+          <div class="contact-details bar-image3">
+
+          </div>
+        </div>
+        <div class="column is-one-fifth image-bar-box">
+          <div class="contact-details bar-image4">
+
+          </div>
+        </div>
+        <div class="column is-one-fifth image-bar-box">
+          <div class="contact-details bar-image5">
+
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <script type="text/javascript" src="script.js"></script>
-</body>
+    </section>
+    <article class="projects">
+      <section class="columns">
+        <div class="text-box project-text column is-three-fifths is-offset-one-fifth">
+          <p>These are the projects that I have made to date.</p>
+          <p><strong>MakeBook</strong> is my most recent project and even though it doesn't look amazing
+            at the moment, I am in the process of making a prettier and more user friendly version. So watch this space!</p>
+        </div>
+      </section>
+      <section class="columns is-multiline">
+        <div class="box column is-3 is-offset-2 project-box">
+          <img src="https://i.imgur.com/FEh7vVH.png" alt="">
+          <h3 class="project-title">MakeBook</h3>
+          <h4 class="project-subtitle">A React App</h4>
+          <p>Create your own game-books or read the books that others have created</p>
+          <a href="https://makebook.herokuapp.com/" class="link">Go to MakeBook</a>
+        </div>
+        <div class="box column is-3 is-offset-2 project-box">
+          <img src="https://i.imgur.com/NtIldIE.png" alt="">
+          <h3 class="project-title">Events</h3>
+          <h4 class="project-subtitle">An AngularJS App</h4>
+          <p>Add events or join events that other users have added</p>
+          <a href="https://wdi-events-project.herokuapp.com/#!/" class="link">Go to Events</a>
+        </div>
+        <div class="box column is-3 is-offset-2 project-box">
+          <img src="https://i.imgur.com/kOBZPSn.png" alt="">
+          <h3 class="project-title">MangaBook</h3>
+          <h4 class="project-subtitle">An EJS App</h4>
+          <p>Rate and review Mangas, add character bio's and comment on reviews</p>
+          <a href="https://manga-book.herokuapp.com/" class="link">Go to Mangabook</a>
+        </div>
+        <div class="box column is-3 is-offset-2 project-box">
+          <img src="https://i.imgur.com/mN2mfhm.png" alt="">
+          <h3 class="project-title">Codebusters</h3>
+          <h4 class="project-subtitle">A grid based code quiz</h4>
+          <p>Work your way across the board answering questions on HTML, CSS and JavaScript</p>
+          <a href="https://gmwilkinson.github.io/codebusters/" class="link">Go to Codebusters</a>
+        </div>
+      </section>
+    </article>
+    <article class="contact">
+      <div class="columns is-multiline">
+        <h2 class="subtitle column is-12 about-subtitle" id="contact">Contact</h2>
+        <section class="column is-12">
+          <div class="text-box text-box-contact">
+            <p>If you fancy a chat or a coffee, feel free to contact me at</p>
+            <p><strong class="glow">wilkinsonmgrant@gmail.com</strong></p>
+            <p>You can also click on my GitHub or LinkedIn below, in the footer</p>
+          </div>
+        </section>
+        <section class="column is-12 columns is-vcentered contact-container">
+          <div class="column is-4 contact-box contact-box-1">
+            <div class="contact-details contact-image1">
+            </div>
+          </div>
+          <div class="column is-4 contact-box contact-box-2">
+            <div class="contact-details contact-image2">
+            </div>
+          </div>
+          <div class="column is-4 contact-box contact-box-3">
+            <div class="contact-details contact-image3">
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>Made by GMWilkinson using HTML, CSS3 and Bulma</p>
+      </div>
+    </footer>
+  </body>
+</html>

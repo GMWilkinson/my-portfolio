@@ -1,378 +1,279 @@
-body {
-  font-family: 'Righteous', cursive;
-  /* min-height: 800px; */
+.header {
   background-image: url('https://i.pinimg.com/originals/ed/e5/87/ede587a3c4083da1c79d9d4c17178301.jpg');
   background-size: cover;
-  background-attachment: fixed;
-  background-clip: border-box;
-  color: #fffdfa;
+  height: 700px;
 }
-h3 {
-  font-size: 20px;
-}
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.modal {
-  display: none;
-  /* position: fixed; */
-  z-index: 1;
-  padding-top: 50px;
-  left: 0;
-  top: 0;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-image: url('https://i.pinimg.com/originals/ed/e5/87/ede587a3c4083da1c79d9d4c17178301.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-}
-.modal-content {
-  position: relative;
-  background-color: rgba(222, 222, 222, 0.3);
-  margin: auto;
-  padding: 0;
-  width: 80%;
-  height: 80%;
-  max-width: 1200px;
-  border: 20px solid #fffdfa;
-  animation-name: zoom;
-  animation-duration: 0.5s;
-}
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: papayawhip;
-  text-decoration: none;
-  cursor: pointer;
-}
-.content {
-  /* border-left: 20px solid #fffdfa;
-  border-right: 20px solid #fffdfa; */
-  background-color: #fffdfa;
-}
-.slides {
-  display: none;
-}
-.thumbnails {
-  top: 0;
-}
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-.caption-container {
-  text-align: center;
-  font-size: 34px;
-  top: 0;
-}
-.demo div{
-  width: 100%;
-  padding: 0;
-}
-.lightbox-images {
-  width: 100%;
-  padding: 0;
-}
-img.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-img.hover-shadow {
-  transition: 0.3s;
-  /* border: 2px solid papayawhip; */
-  /* border-radius: 5%; */
-}
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 papayawhip, 0 6px 20px 0 #ff4da6;
-}
-
 .navbar {
-  background-color: rgba(255, 239, 213, 0.4);
+  background-color: rgba(0, 0, 0, 0);
   position: sticky;
   top: 0;
-  z-index: 0;
 }
-.navbar-item {
-  color: white;
+.link-box {
+  height: auto;
 }
-a:hover {
-  background-color: papayawhip;
-}
-.modal-content, a:hover {
-  background-color: rgba(255, 239, 213, 0.4)
-}
-.footer, a:hover {
-  background-color: rgba(255, 239, 213, 0.4);
-}
-.modal-content, a {
-  color: white;
-}
-.about {
-  text-align: center;
-  /* margin: 3em 0 2em 0; */
-  margin: 40px;
+.link {
   font-size: 25px;
-  border: 40px solid #fffdfa;
+  background-image: linear-gradient(rgba(153, 51, 255, 1), rgba(255, 0, 255, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.about-text {
-  margin: 40px;
-  padding: 30px;
-  background-color: #fffdfa;
-}
-.skills-box {
-  text-align: center;
-  margin: 40px;
-  font-size: 25px;
-  border: 40px solid #fffdfa;
-}
-.skills {
-  margin: 40px;
-  padding: 30px;
-
-}
-.skills-list {
-  background-color: #fffdfa;
-}
-.subtitle, .about {
-  padding-top: 25px;
-}
-p {
-  font-family: sans-serif;
-}
-p, .about {
-  color: #999999;
-  padding: 6px;
-  /* font-family: sans-serif; */
-}
-.hero {
-  background-color: #fffdfa;
-  /* border-top: 30px solid #fffdfa;
-  border-right: 300px solid #fffdfa;
-  border-bottom: 30px solid #fffdfa;
-  border-left: 10px solid #fffdfa; */
-}
-.mob-title {
-  display: none;
-}
-.footer {
-  background-color: #fffdfa;
-  margin-top: 3em;
-}
-.title {
-  background-color: #fffdfa;
-  padding: 20px 400px 20px 10px;
-}
-.subtitle {
-  text-align: center;
-  font-size: 40px;
-}
-.image-box {
-  border: 40px solid #fffdfa;
-  margin: 3em 0 0 0;
-  padding: 1em;
-}
-.projects {
-  /* background-color: #fffdfa; */
-  border: 40px solid #fffdfa;
-  margin: 3em 0 0 0;
-  padding: 1em;
-}
-.projects2 {
-  /* background-color: #fffdfa; */
-  margin: 40px;
-  padding: 1em;
-  border: 40px solid #fffdfa;
-}
-/* .image-thumbnail {
-  background-color: black;
-} */
-article, .image-thumbnails {
-  text-align: center;
-  font-size: 25px;
-}
-.close-box {
-  font-size: 10px;
-  text-align: right;
-}
-.glow {
-  color: #fff;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-.glow-box {
-  color: #fff;
-  animation: glow-box 1s ease-in-out infinite alternate;
-}
-.content-zoom-in {
-  animation-name: zoom-in;
-  animation-duration: 0.5s;
-  animation-iteration-count: 1;
-}
-
-@keyframes zoom-in {
-  from {
-    transform:scale(1)
-  }
-  to {
-    transform:scale(0)
-  }
-}
-@keyframes zoom {
-  from {
-    transform:scale(0)
-  }
-  to {
-    transform:scale(1)
-  }
-}
-@keyframes glow {
-  from {
-    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #e60073, 0 0 10px #e60073, 0 0 12px #e60073, 0 0 15px #e60073, 0 0 17px #e60073;
-  }
-
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 7px #ff4da6, 0 0 10px #ff4da6, 0 0 12px #ff4da6, 0 0 15px #ff4da6, 0 0 17px #ff4da6, 0 0 20px #ff4da6;
-  }
-}
-/* @keyframes glow-box {
-  from {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-
-  to {
-    box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-} */
-.fade {
+.header {
   position: relative;
-  width: 50%;
-  margin: 20px 0;
 }
-.middle {
-  transition: .5s ease;
-  opacity: 0;
+.title-box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.subtitle-box {
+  margin: 60px 0 25px 0;
+}
+.text-box {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.project-text {
+  margin-top: 50px;
+}
+.project-title {
+  font-size: 35px;
+  background-image: linear-gradient(rgba(153, 51, 255, 1), rgba(255, 0, 255, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.project-subtitle {
+  font-size: 25px;
+}
+.projects-subtitle {
+  color: white;
+  text-shadow: 0px 5px 3px rgba(255, 0, 255, 1);
+}
+.skill-box {
+  padding-bottom: 60px;
+}
+.bar-box {
+  position: absolute;
+}
+.project-box {
+  transition: box-shadow 0.5s;
+  text-align: center;
+}
+.project-box:hover {
+  box-shadow: 0px 4px 9px 5px rgba(211, 0, 255, 0.3);
+}
+.box {
+  height: 450px;
+}
+.contact-container {
+  color: white;
+}
+.contact-box {
+  text-align: center;
+  position: relative;
+  height: 650px;
+}
+/* .contact-box:hover {
+  background-image: linear-gradient(rgba(153, 51, 255, 1), papayawhip, rgba(255, 0, 255, 1));
+} */
+.contact-box-1 {
+  background-image: url('https://i.pinimg.com/736x/16/8a/1a/168a1af5f6d637b7c217e9da7eaf231f.jpg');
+  background-size: cover;
+
+}
+.contact-box-2 {
+  background-image: url('https://i.pinimg.com/736x/bd/85/65/bd8565b27edecf43c22bff0b098b3b63--manga-anime-anime-art.jpg');
+  background-size: cover;
+}
+.contact-box-3 {
+  background-image: url('https://i.pinimg.com/736x/3d/4e/87/3d4e87d09aa7e574f1ef519d917477d4--naruto-kakashi-naruto-art.jpg');
+  background-size: cover;
+}
+.contact-box-4 {
+  background-image: url('http://s3.amazonaws.com/uploads.kidzworld.com/article/28340/Bleach_01.jpg?1185233998');
+  background-size: cover;
+}
+.contact-details {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.my-link {
+  color: rgba(0, 0, 0, 0);
+}
+.contact-details:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.title {
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+.subtitle {
+  font-size: 50px;
+  text-align: center;
+}
+.about {
+  margin-top: 25px;
+}
+.projects {
+  margin-bottom: 80px;
+}
+.about-subtitle {
+  background-image: linear-gradient(rgba(153, 51, 255, 1), papayawhip, rgba(255, 0, 255, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tech-subtitle {
+  font-size: 35px;
+}
+a {
+  background-image: linear-gradient(rgba(153, 51, 255, 1), rgba(255, 0, 255, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+ul {
+  text-align: center;
+  font-size: 20px;
+}
+.link-box:hover {
+  background-image: linear-gradient(rgba(153, 51, 255, 1), papayawhip, rgba(255, 0, 255, 1));
+}
+.image-bar {
+  background-image: url('https://www.capsulecomputers.com.au/wp-content/uploads/2016/07/ccbanner-anime.png');
+  background-size: cover;
+  height: 400px;
+  /* position: relative; */
+}
+.contact-box {
+  position: relative;
+}
+.image-bar-box {
+  position: relative;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.bar-image1 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: url('https://i6.mangapanda.com/bleach/647/bleach-6344977.jpg');
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.bar-image2 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: url('https://i.pinimg.com/736x/3a/b2/75/3ab2753e2495742c22744a30716d0a6d--read-tokyo-ghoul-tokyo-ghoul-manga-pages.jpg');
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.bar-image3 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: url('http://pm1.narvii.com/6067/efdc9dc53dd925b1bf30094a2f174e85dd608746_hq.jpg');
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.bar-image4 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: url('https://i8.mangapanda.com/berserk/19/berserk-1591441.jpg');
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.bar-image5 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: url('http://pre08.deviantart.net/8b0f/th/pre/f/2012/101/a/b/death_note_doujinshi_page_2_by_shaami-d4vsou1.jpg');
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.image-bar-box:hover .contact-details{
+  bottom: 0;
+  height: 400px;
+}
+.contact-image1 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: url('http://static.comicvine.com/uploads/scale_super/11115/111150904/3679578-berserk-27220.jpg');
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.contact-image2 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: url('https://i8.mangareader.net/boku-no-hero-academia/43/boku-no-hero-academia-5693403.jpg');
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.contact-image3 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: url('http://pre13.deviantart.net/c5f1/th/pre/f/2012/200/0/1/naruto__road_to_ninja_movie_manga___page_5_by_uzumaki_no_hairol-d57tubx.jpg');
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.contact-box:hover .contact-details {
+  bottom: 0;
+  height: 100%;
+}
+.contact-details {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
-}
-.fade:hover .middle {
-  opacity: 1;
-}
-.text {
-  font-size: 40px;
-  text-align: center;
-  margin: auto;
-}
-.linkedin {
-  align-self: flex-end;
-}
-@media(max-width: 400px) {
-  body {
-    width: 100%;
-  }
-  .navbar {
-    position: static;
-  }
-  p {
-    font-size: 12px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  h1 {
-    font-size: 25px;
-  }
-  .hero {
-    display: none;
-  }
-  .mob-title {
-    display: block;
-  }
-  .hero-body {
-    height: 20px;
-  }
-  .about {
-    margin: 2em 0 1em 0;
-    border: 30px solid #fffdfa;
-  }
-  .about-text {
-    margin: 10px;
-    padding: 15px;
-  }
-  .subtitle {
-    font-size: 30px;
-  }
-  .image-box {
-    border: 20px solid #fffdfa;
-    margin: 20px 0 0 0;
-  }
-  .text {
-    font-size: 25px;
-  }
-  /* .about-text {
-    margin: 15px;
-    padding: 10px;
-  } */
-  .projects2 {
-    margin: 0 0 2em 0;
-    padding: 1em;
-    border: 10px solid #fffdfa;
-  }
-  .skills-box {
-    margin: 10px;
-    font-size: 10px;
-    border: 20px solid #fffdfa;
-  }
-  .skills {
-    margin: 20px;
-    padding: 10px;
-  }
-  .li {
-    font-size: 10px;
-  }
-  .modal-content {
-    position: relative;
-    border: 10px solid #fffdfa;
-  }
-  .lightbox-images {
-    display: flex;
-    justify-content: flex-start;
-    /* position: relative; */
-  }
-  .caption-container {
-    font-size: 25px;
-  }
-  .demo {
-    /* position: absolute; */
-    display: inline-block;
-    top: 0;
-  }
-  .gap {
-    padding: .25rem;
-  }
 }
