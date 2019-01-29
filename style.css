@@ -143,7 +143,7 @@ ul {
   font-size: 20px;
 }
 .link-box:hover {
-  background-image: linear-gradient(rgba(153, 51, 255, 1), papayawhip, rgba(255, 0, 255, 1));
+  background-image: linear-gradient(rgba(153, 51, 255, 0.5), papayawhip, rgba(255, 0, 255, 0.5));
 }
 .image-bar {
   background-image: url('https://www.capsulecomputers.com.au/wp-content/uploads/2016/07/ccbanner-anime.png');
@@ -276,4 +276,38 @@ ul {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .tech-subtitle {
+    font-size: 25px;
+  }
+  .main-title {
+    font-size: 50px;
+  }
+  .contact-box {
+    height: 300px;
+  }
+}
+@media (max-width: 770px) {
+  .navbar {
+    position: static;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    position: static;
+  }
+  .main-title {
+    font-size: 35px;
+  }
+  .header {
+    height: 300px;
+  }
+  .contact-details {
+    display: none;
+  }
+  .contact-box {
+    height: 200px;
+  }
 }
