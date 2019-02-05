@@ -121,6 +121,10 @@
 .about {
   margin-top: 25px;
 }
+.testing {
+  margin-top: 10px;
+  font-size: 30px;
+}
 .projects {
   margin-bottom: 80px;
 }
@@ -288,6 +292,9 @@ ul {
   .contact-box {
     height: 300px;
   }
+  .image-bar-box {
+    display: none;
+  }
 }
 @media (max-width: 770px) {
   .navbar {
@@ -304,9 +311,9 @@ ul {
   .header {
     height: 300px;
   }
-  .contact-details {
+  /* .contact-details {
     display: none;
-  }
+  } */
   .contact-box {
     height: 200px;
   }
