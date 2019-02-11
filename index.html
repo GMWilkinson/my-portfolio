@@ -128,28 +128,28 @@
         </div>
       </section>
       <section class="columns is-multiline">
-        <div class="box column is-3 is-offset-2 project-box">
+        <div class="box column is-3 is-offset-2 project-box" id="box1">
           <img src="https://i.imgur.com/FEh7vVH.png" alt="">
           <h3 class="project-title">MakeBook</h3>
           <h4 class="project-subtitle">A MERN App</h4>
           <p>Create your own game-books or read the books that others have created</p>
           <a href="https://makebook.herokuapp.com/" class="link">Go to MakeBook</a>
         </div>
-        <div class="box column is-3 is-offset-2 project-box">
+        <div class="box column is-3 is-offset-2 project-box" id="box2">
           <img src="https://i.imgur.com/NtIldIE.png" alt="">
           <h3 class="project-title">Events</h3>
           <h4 class="project-subtitle">A MEAN App</h4>
           <p>Add events or join events that other users have added</p>
           <a href="https://wdi-events-project.herokuapp.com/#!/" class="link">Go to Events</a>
         </div>
-        <div class="box column is-3 is-offset-2 project-box">
+        <div class="box column is-3 is-offset-2 project-box" id="box3">
           <img src="https://i.imgur.com/kOBZPSn.png" alt="">
           <h3 class="project-title">MangaBook</h3>
           <h4 class="project-subtitle">An Express App</h4>
           <p>Rate and review Mangas, add character bio's and comment on reviews</p>
           <a href="https://manga-book.herokuapp.com/" class="link">Go to Mangabook</a>
         </div>
-        <div class="box column is-3 is-offset-2 project-box">
+        <div class="box column is-3 is-offset-2 project-box" id="box4">
           <img src="https://i.imgur.com/mN2mfhm.png" alt="">
           <h3 class="project-title">Codebusters</h3>
           <h4 class="project-subtitle">A grid based code quiz</h4>
@@ -158,12 +158,120 @@
         </div>
       </section>
     </article>
+    <div class="modal" id="modal1">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">MakeBook</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <article class="content">
+            <p>
+              This project is made using Node.js, MongoDB, Express,
+              ReactJS, JavaScript and SCSS.
+              For this project I decided to make an app
+              that allows the user to create their own adventure
+              game-book and read all the books that have been created by
+              other users.
+            </p>
+            <p>
+              I am most proud of the fact that by changing states rather than
+              URLs, the user can not cheat and go back a page as it takes you back to
+              the start of the book .
+              I still have some bugs to fix but am in the process of making a second version.
+            </p>
+          </article>
+        </section>
+        <footer class="modal-card-foot">
+          
+        </footer>
+      </div>
+    </div>
+    <div class="modal" id="modal2">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Events</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <p>
+          This is the first project that I've made as part of a team.
+          We used Node.js, MongoDB, Express, AngularJS, JavaScript, SCSS and HTML.
+          We decided to make an event planner app where the user can add,
+          join and comment on events.  We used OpenStreetMap and Nominatem
+          so that when the user adds an event a pin will be put on the
+          map at the event’s location on the show page.
+          This project was made mobile-first.
+          In the future this project would be made much more useful if
+          you could add friends and only the friends could see your events
+          and join them.
+          </p>
+        </section>
+        <footer class="modal-card-foot">
+
+        </footer>
+      </div>
+    </div>
+    <div class="modal" id="modal3">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">MangaBook</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <article class="content">
+            <p>
+              This is the first app that I made with a back-end. It is made with
+              Node.js, EJS, Express, MongoDB, JavaScript and CSS.
+              I decided to make a Manga review site as I am a huge Manga nerd.
+              You can register, login, logout, rate, add your own reviews and
+              leave comments.
+              This project was made mobile-first.
+              In the future I think this app would benefit greatly from
+              a table that placed each of the added books from top to bottom
+              in order of ratings.
+            </p>
+          </article>
+        </section>
+        <footer class="modal-card-foot">
+
+        </footer>
+      </div>
+    </div>
+    <div class="modal" id="modal4">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Codebusters</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <article class="content">
+            <p>
+              This is the first project that I made at General Assembly.
+              It uses HTML, CSS and JavaScript.
+              I chose to make a quiz game that asks questions
+              on HTML, CSS and JavaScript that increase in difficulty
+              for each correct answer you give.
+              It is not even slightly responsive at the moment and there are some
+              bugs, such as the game doesn't end properly. But it
+              wouldn't be too hard to fix.
+            </p>
+          </article>
+        </section>
+        <footer class="modal-card-foot">
+        </footer>
+      </div>
+    </div>
     <article class="projects">
       <section class="columns is-multiline projects">
         <h2 class="subtitle column is-12 about-subtitle" id="currentProject">What I'm Working On Now</h2>
         <div class="box column is-6 is-offset-3 project-box">
           <figure class="new-project-box project-box">
-            <img class="" src="https://i.imgur.com/qZTy7L8.png" alt="screenshot of MakeBookV2">
+            <img class="" src="images/makebookv2.png" alt="screenshot of MakeBookV2">
           </figure>
           <h3 class="project-title column is-12">MakeBookV2</h3>
           <h4 class="project-subtitle column is-12">MakeBook But Better</h4>
@@ -219,5 +327,8 @@
         <p>Made by GMWilkinson using HTML, CSS3 and Bulma</p>
       </div>
     </footer>
+    <script type="text/javascript" src="script.js">
+
+    </script>
   </body>
 </html>

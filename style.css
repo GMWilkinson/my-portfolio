@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .header {
   background-image: url('https://i.pinimg.com/originals/ed/e5/87/ede587a3c4083da1c79d9d4c17178301.jpg');
   background-size: cover;
