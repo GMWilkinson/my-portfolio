@@ -35,9 +35,9 @@ openModals();
 
 function close() {
   for (let i = 0; i < closeX.length; i++) {
-    closeX[i].addEventListener('click', function() {
+    closeX[i].addEventListener('click', function(event) {
       console.log(closeX[i]);
-      if (event.target === closeX[i]) {
+      if (event.target === closeX[i] || event.target === window) {
         return modal[i].classList.toggle('is-active');
       }
     })
