@@ -19,11 +19,12 @@ class Intro extends React.Component {
       <CardBody>
         <p>
         These are the projects that I have made to date.
-        MakeBook is my most recent project and even though it doesn't look
-        amazing at the moment, I am still immensely proud of it. I am in the process of making a prettier and more user friendly version. So watch this space!
-        I was given seven days to complete each of these projects,
+        tokenanalyst.io is my most recent project.
+        I was given seven days to complete each of the GA projects,
         I haven't done anything to them since so that you can see my progression.
-        I hope that you like them.
+        Nodestats is the project that I am most proud of. It was the first time that I had worked
+        with huge amounts of data and google charts. I learned a so much while doing this project.
+        <p>I hope that you like them.</p>
         </p>
       </CardBody>
     );
