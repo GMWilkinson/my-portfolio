@@ -4,7 +4,7 @@ import ProjectIntro from './ProjectIntro';
 import ProjectBox from './ProjectBox';
 import Contact from '../contact/Contact';
 
-import { Row, Col, Collapse, Card, CardBody, Button }  from 'reactstrap';
+import { Row }  from 'reactstrap';
 
 const gaProject = [
   {
@@ -137,7 +137,7 @@ class Intro extends React.Component {
     return (
           <article className={this.state.animate}>
             <div>
-              <h2 className="">Projects</h2>
+              <h2 className="" id="projects">Projects</h2>
             </div>
             <div>
               <ProjectIntro />

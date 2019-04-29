@@ -19,16 +19,53 @@ p {
 
 .prev, .next {
   position: absolute;
-  top: 50%;
+  top: 45%;
   margin-top: -22px;
   margin-left: 1rem;
   margin-right: 1rem;
-  width: 100px;
+  font-size: 5rem;
+  font-weight: bolder;
+  text-shadow: 5px 5px 2px #999999;
+  cursor: pointer;
+  -webkit-animation: jelly-horizontal 1.6s infinite;
+	        animation: jelly-horizontal 1.6s infinite;
 }
 
 .next {
   right: 0;
 }
+
+@keyframes jelly-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
 .image1 {
   background-image: url('https://cdn.vox-cdn.com/thumbor/mlKY3GoV4aX_OJ5V3rl-bYCAKtQ=/0x0:1920x1080/1200x800/filters:focal(1101x386:1407x692)/cdn.vox-cdn.com/uploads/chorus_image/image/62623727/0_sZnr3Tr_6978vmjQ.0.jpg');
   background-position: center;
@@ -68,22 +105,6 @@ p {
     opacity: 1;
   }
 }
-.outer-box {
-  height: 800px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  .inner-box {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-}
 
 // Header
 .header-box {
@@ -97,31 +118,10 @@ p {
     header {
       h1 {
         font-size: 4rem;
-        -webkit-animation: vibrate-1 0.3s linear infinite both;
-	        animation: vibrate-1 0.3s linear infinite both;
+        -webkit-animation: jelly-horizontal 1.5s 1;
+      	        animation: jelly-horizontal 1.5s 1;
       }
     }
-  }
-}
-
-
-.slide-out {
-  -webkit-animation: slide-out 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: slide-out 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-@-webkit-keyframes slide-out {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-            width: 100%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
-            width: 0;
-    opacity: 0;
-    display: none;
   }
 }
 
@@ -188,36 +188,6 @@ p {
     font-size: 1.6rem;
   }
 }
-.hidden {
-  display: none;
-}
-.slide-in-section {
-  height: 100%;
-  -webkit-animation: slide-in-blurred-top 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-	        animation: slide-in-blurred-top 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-}
-
-@-webkit-keyframes slide-in-blurred-top {
-  0% {
-    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-    -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
-    -webkit-filter: blur(40px);
-            filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-            transform: translateY(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
-}
-
 
 // TechLists
 .tech-list {
@@ -248,14 +218,15 @@ h4 {
     width: 100%;
   }
 }
-// .project-container {
-//   padding-top: 5rem;
-// }
+
 .gap {
   padding-bottom: 3rem;
   padding-top: 3rem;
 }
 @media(max-width: 700px) {
+  #about, #projects {
+    margin-top: 5rem;
+  }
   .gap {
     display: none;
   }
@@ -264,6 +235,17 @@ h4 {
   }
   p {
     font-size: 15px;
+  }
+  .prev, .next {
+    position: absolute;
+    bottom: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    -webkit-animation: none;
+  	        animation: none;
+  }
+  a {
+    font-size: 2rem;
   }
 }
 // Contact

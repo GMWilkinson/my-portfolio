@@ -69,14 +69,14 @@ class Frame extends React.Component {
         </div>
         <div>
         {this.state.counter > 0 ?
-        <Button className="prev" onClick={this.prev} outline>Previous</Button>
+        <div className="prev" onClick={this.prev}>&#8592;</div>
         :
         <p></p>
         }
         </div>
         <div>
         {this.state.counter < 3 ?
-        <Button className="next" onClick={this.next} outline>Next</Button>
+        <div className="next" onClick={this.next}>&#8594;</div>
         :
         <p></p>
       }
