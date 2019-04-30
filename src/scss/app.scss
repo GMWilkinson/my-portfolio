@@ -84,27 +84,27 @@ p {
 .main-card {
   height: 50%;
 }
-.slide-out-section {
-  -webkit-animation: slide-out-elliptic-top-bck 0.7s ease-in both;
-	        animation: slide-out-elliptic-top-bck 0.7s ease-in both;
-}
+// .slide-out-section {
+//   -webkit-animation: slide-out-elliptic-top-bck 0.7s ease-in both;
+// 	        animation: slide-out-elliptic-top-bck 0.7s ease-in both;
+// }
 
-@keyframes slide-out-section {
-  0% {
-    -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
-    -webkit-transform-origin: 50% 1400px;
-            transform-origin: 50% 1400px;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-            transform: translateY(-600px) rotateX(-30deg) scale(0);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-    opacity: 1;
-  }
-}
+// @keyframes slide-out-section {
+//   0% {
+//     -webkit-transform: translateY(0) rotateX(0) scale(1);
+//             transform: translateY(0) rotateX(0) scale(1);
+//     -webkit-transform-origin: 50% 1400px;
+//             transform-origin: 50% 1400px;
+//     opacity: 1;
+//   }
+//   100% {
+//     -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+//             transform: translateY(-600px) rotateX(-30deg) scale(0);
+//     -webkit-transform-origin: 50% 100%;
+//             transform-origin: 50% 100%;
+//     opacity: 1;
+//   }
+// }
 
 // Header
 .header-box {
@@ -125,58 +125,58 @@ p {
   }
 }
 
-@-webkit-keyframes vibrate-1 {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-2px, 2px);
-            transform: translate(-2px, 2px);
-  }
-  40% {
-    -webkit-transform: translate(-2px, -2px);
-            transform: translate(-2px, -2px);
-  }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px);
-  }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-            transform: translate(2px, -2px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-@keyframes vibrate-1 {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-2px, 2px);
-            transform: translate(-2px, 2px);
-  }
-  40% {
-    -webkit-transform: translate(-2px, -2px);
-            transform: translate(-2px, -2px);
-  }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px);
-  }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-            transform: translate(2px, -2px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
+// @-webkit-keyframes vibrate-1 {
+//   0% {
+//     -webkit-transform: translate(0);
+//             transform: translate(0);
+//   }
+//   20% {
+//     -webkit-transform: translate(-2px, 2px);
+//             transform: translate(-2px, 2px);
+//   }
+//   40% {
+//     -webkit-transform: translate(-2px, -2px);
+//             transform: translate(-2px, -2px);
+//   }
+//   60% {
+//     -webkit-transform: translate(2px, 2px);
+//             transform: translate(2px, 2px);
+//   }
+//   80% {
+//     -webkit-transform: translate(2px, -2px);
+//             transform: translate(2px, -2px);
+//   }
+//   100% {
+//     -webkit-transform: translate(0);
+//             transform: translate(0);
+//   }
+// }
+// @keyframes vibrate-1 {
+//   0% {
+//     -webkit-transform: translate(0);
+//             transform: translate(0);
+//   }
+//   20% {
+//     -webkit-transform: translate(-2px, 2px);
+//             transform: translate(-2px, 2px);
+//   }
+//   40% {
+//     -webkit-transform: translate(-2px, -2px);
+//             transform: translate(-2px, -2px);
+//   }
+//   60% {
+//     -webkit-transform: translate(2px, 2px);
+//             transform: translate(2px, 2px);
+//   }
+//   80% {
+//     -webkit-transform: translate(2px, -2px);
+//             transform: translate(2px, -2px);
+//   }
+//   100% {
+//     -webkit-transform: translate(0);
+//             transform: translate(0);
+//   }
+// }
 
 // Intro
 .intro {
@@ -224,11 +224,16 @@ h4 {
   padding-top: 3rem;
 }
 @media(max-width: 700px) {
+  body {
+    padding-top: 10rem
+  }
   #about {
     margin-top: 5rem;
+    width: 280px;
   }
   #projects {
     margin-top: 5rem;
+    width: 280px;
   }
   .gap {
     display: none;
@@ -241,7 +246,7 @@ h4 {
   }
   .prev, .next {
     position: absolute;
-    bottom: 0;
+    top: 90%;
     font-size: 2rem;
     font-weight: bold;
     -webkit-animation: none;
