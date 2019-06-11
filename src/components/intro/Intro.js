@@ -1,6 +1,5 @@
 
 import React from "react";
-import Projects from '../projects/Projects';
 import TechLists from './TechLists';
 import MethLists from './MethLists';
 import Testing from './TestLists';
@@ -9,9 +8,10 @@ import Frameworks from './FrameworksLists';
 import { Row, Col }  from 'reactstrap';
 
 class Intro extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.toggle = this.toggle.bind(this);
+    this.cats = this.props.cats;
     this.state = {
       collapse: false,
       image: ''
@@ -45,7 +45,7 @@ class Intro extends React.Component {
           <p>I'm from London and have just finished my first commercial contract at TokenAnalyst,
            I have also completed the Immersive Web Development course at GA.</p>
           <p>I am currently focusing on ReactJS, node.js
-          and keeping my vanilla javascript up to date</p>
+          and keeping my vanilla javascript up to date</p>{this.cats}
           <p>Really enjoying coding and just wish I'd gotten into it sooner.</p>
           <p>I'm currently looking for new opportunities as a Junior Developer.</p>
           <Row>

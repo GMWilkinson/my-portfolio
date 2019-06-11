@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Card, CardBody, Button }  from 'reactstrap';
+import { CardBody }  from 'reactstrap';
 
 class Header extends React.Component {
   constructor() {
@@ -19,12 +19,12 @@ class Header extends React.Component {
 
   render() {
     return (
-      <header className={this.state.image}>
+      <header>
         <section className="">
           <div>
             <CardBody>
               <div>
-                <h1>Grant Wilkinson's Portfolio</h1>
+                <h1 className="title">Grant Wilkinson's Portfolio</h1>
               </div>
             </CardBody>
           </div>

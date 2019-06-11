@@ -2,7 +2,6 @@
 import React from "react";
 import ProjectIntro from './ProjectIntro';
 import ProjectBox from './ProjectBox';
-import Contact from '../contact/Contact';
 
 import { Row }  from 'reactstrap';
 
@@ -135,38 +134,38 @@ class Intro extends React.Component {
 
   render() {
     return (
-          <article className={this.state.animate}>
-            <div>
-              <h2 className="" id="projects">Projects</h2>
-            </div>
-            <div>
-              <ProjectIntro />
-              <h2 onClick={this.toggle}>Commercial Projects</h2>
-              <Row>
-              {comProject && comProject.map(
-                project =>
-                <ProjectBox
-                  key={project.id}
-                  name={project.name}
-                  description={project.description}
-                  link={project.link}
-                  image={project.mainImage}/>
-                )}
-              </Row>
-              <h2 onClick={this.toggle}>GA Projects</h2>
-              <Row>
-                {gaProject && gaProject.map(
-                  project =>
-                  <ProjectBox
-                    key={project.id}
-                    name={project.name}
-                    description={project.description}
-                    link={project.link}
-                    image={project.mainImage}/>
-                  )}
-              </Row>
-            </div>
-          </article>
+      <article className={this.state.animate}>
+        <div>
+          <h2 className="" id="projects">Projects</h2>
+        </div>
+        <div>
+          <ProjectIntro />
+          <h2 onClick={this.toggle}>Commercial Projects</h2>
+          <Row>
+          {comProject && comProject.map(
+            project =>
+            <ProjectBox
+              key={project.id}
+              name={project.name}
+              description={project.description}
+              link={project.link}
+              image={project.mainImage}/>
+            )}
+          </Row>
+          <h2 onClick={this.toggle}>GA Projects</h2>
+          <Row>
+            {gaProject && gaProject.map(
+              project =>
+              <ProjectBox
+                key={project.id}
+                name={project.name}
+                description={project.description}
+                link={project.link}
+                image={project.mainImage}/>
+              )}
+          </Row>
+        </div>
+      </article>
     );
   }
 }

@@ -4,8 +4,9 @@ import Header from './Header';
 import Intro from '../intro/Intro';
 import Projects from '../projects/Projects';
 import Contact from '../contact/Contact';
+import Current from '../current/Current';
 
-import { Card, CardBody, Collapse, Row, Button } from 'reactstrap';
+import { CardBody } from 'reactstrap';
 
 class Frame extends React.Component {
   constructor() {
@@ -34,7 +35,6 @@ class Frame extends React.Component {
   }
 
   nextState() {
-    console.log('test', this.state.counter)
     if (this.state.counter === 0) {
       return <Header />
     }  if (this.state.counter === 1) {
@@ -42,14 +42,40 @@ class Frame extends React.Component {
     }  if (this.state.counter === 2) {
         return <Projects />
     }  if (this.state.counter === 3) {
+        return <Current />
+    }  if (this.state.counter === 4) {
         return <Contact />
+    }
+  }
+
+  buttonTextNext() {
+    if (this.state.counter === 0) {
+      return 'Intro'
+    }  if (this.state.counter === 1) {
+        return 'Projects'
+    }  if (this.state.counter === 2) {
+        return 'Current'
+    }  if (this.state.counter === 3) {
+        return 'Contact'
+    }
+  }
+
+  buttonTextPrev() {
+      if (this.state.counter === 1) {
+        return 'Title'
+    }  if (this.state.counter === 2) {
+        return 'Intro'
+    }  if (this.state.counter === 3) {
+        return 'Projects'
+    }  if (this.state.counter === 4) {
+      return 'Current'
     }
   }
 
   slide() {
     this.setState({
       animate: 'slide-out',
-      newSection: 'slide-in-section'
+      newSection: 'slide-out-section'
     })
   }
 
@@ -61,7 +87,7 @@ class Frame extends React.Component {
             <div>
               <CardBody>
                 <div>
-                  <h1 className={this.slide}>{this.nextState()}</h1>
+                  <h1>{this.nextState()}</h1>
                 </div>
               </CardBody>
             </div>
@@ -69,14 +95,14 @@ class Frame extends React.Component {
         </div>
         <div>
         {this.state.counter > 0 ?
-        <div className="prev" onClick={this.prev}>&#8592;</div>
+        <div className="prev" onClick={this.prev}>{this.buttonTextPrev()}</div>
         :
         <p></p>
         }
         </div>
         <div>
-        {this.state.counter < 3 ?
-        <div className="next" onClick={this.next}>&#8594;</div>
+        {this.state.counter < 4 ?
+        <div className="next" onClick={this.next}>{this.buttonTextNext()}</div>
         :
         <p></p>
       }

@@ -1,8 +1,5 @@
 
-import React from "react";
-import Intro from '../intro/Intro';
-import Projects from '../projects/Projects';
-import { Row, Col, Card, Button }  from 'reactstrap';
+import React from "react"
 
 class Contact extends React.Component {
   constructor() {

@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Collapse, Row, Col, CardBody, Button }  from 'reactstrap';
+import { Collapse, Row, Col, CardBody }  from 'reactstrap';
 
 const methodologies = [
   {name: 'Trello'},
@@ -32,7 +32,7 @@ class MethLists extends React.Component {
           <CardBody>
             <article className="">
               <div className="">
-                <h4 className="" onClick={this.toggle}>Methodologies</h4>
+                <h4 className="lists" onClick={this.toggle}>Methodologies</h4>
               </div>
               <Collapse isOpen={this.state.collapse}>
                 <CardBody>

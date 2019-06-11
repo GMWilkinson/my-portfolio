@@ -2,7 +2,13 @@
 body {
   font-family: 'Barlow Condensed', sans-serif;
 }
-h2, h1, h4 {
+.title, h2, a {
+  background: -webkit-linear-gradient(#333, #333, #333, #ccc, #aaa, #333, #333, #333, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+h1, h2, h4 {
   text-align: center;
   cursor: pointer;
 }
@@ -12,6 +18,10 @@ h2, h1, h4 {
 .collapse {
   bottom: 0;
 }
+.lists {
+  -webkit-animation: jelly-horizontal 1.6s 2;
+	        animation: jelly-horizontal 1.6s 2;
+}
 p {
   text-align: center;
   font-size: 1.6rem;
@@ -19,13 +29,16 @@ p {
 
 .prev, .next {
   position: absolute;
-  top: 45%;
+  top: 50%;
   margin-top: -22px;
   margin-left: 1rem;
   margin-right: 1rem;
-  font-size: 5rem;
-  font-weight: bolder;
-  text-shadow: 5px 5px 2px #999999;
+  font-size: 2rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#333, #333, #333, #eee, #333, #333, #333, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: .5px black;
   cursor: pointer;
   -webkit-animation: jelly-horizontal 1.6s infinite;
 	        animation: jelly-horizontal 1.6s infinite;
@@ -66,15 +79,12 @@ p {
   }
 }
 
-.image1 {
-  background-image: url('https://cdn.vox-cdn.com/thumbor/mlKY3GoV4aX_OJ5V3rl-bYCAKtQ=/0x0:1920x1080/1200x800/filters:focal(1101x386:1407x692)/cdn.vox-cdn.com/uploads/chorus_image/image/62623727/0_sZnr3Tr_6978vmjQ.0.jpg');
-  background-position: center;
-  background-size: cover;
-}
-.image2 {
-  background-image: url('https://pixel.nymag.com/imgs/daily/vulture/2017/10/10/10-anime-netflix.w700.h700.jpg');
-  background-position: center;
-  background-size: cover;
+.modal-button {
+  background: -webkit-linear-gradient(#333, #333, #333, #ccc, #aaa, #333, #333, #333, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px black;
+  font-size: 2rem;
 }
 
 // Frame
@@ -84,27 +94,27 @@ p {
 .main-card {
   height: 50%;
 }
-// .slide-out-section {
-//   -webkit-animation: slide-out-elliptic-top-bck 0.7s ease-in both;
-// 	        animation: slide-out-elliptic-top-bck 0.7s ease-in both;
-// }
+.slide-out-section {
+  -webkit-animation: slide-out-elliptic-top-bck 0.7s ease-in both;
+	        animation: slide-out-elliptic-top-bck 0.7s ease-in both;
+}
 
-// @keyframes slide-out-section {
-//   0% {
-//     -webkit-transform: translateY(0) rotateX(0) scale(1);
-//             transform: translateY(0) rotateX(0) scale(1);
-//     -webkit-transform-origin: 50% 1400px;
-//             transform-origin: 50% 1400px;
-//     opacity: 1;
-//   }
-//   100% {
-//     -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-//             transform: translateY(-600px) rotateX(-30deg) scale(0);
-//     -webkit-transform-origin: 50% 100%;
-//             transform-origin: 50% 100%;
-//     opacity: 1;
-//   }
-// }
+@keyframes slide-out-section {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 1;
+  }
+}
 
 // Header
 .header-box {
@@ -124,59 +134,6 @@ p {
     }
   }
 }
-
-// @-webkit-keyframes vibrate-1 {
-//   0% {
-//     -webkit-transform: translate(0);
-//             transform: translate(0);
-//   }
-//   20% {
-//     -webkit-transform: translate(-2px, 2px);
-//             transform: translate(-2px, 2px);
-//   }
-//   40% {
-//     -webkit-transform: translate(-2px, -2px);
-//             transform: translate(-2px, -2px);
-//   }
-//   60% {
-//     -webkit-transform: translate(2px, 2px);
-//             transform: translate(2px, 2px);
-//   }
-//   80% {
-//     -webkit-transform: translate(2px, -2px);
-//             transform: translate(2px, -2px);
-//   }
-//   100% {
-//     -webkit-transform: translate(0);
-//             transform: translate(0);
-//   }
-// }
-// @keyframes vibrate-1 {
-//   0% {
-//     -webkit-transform: translate(0);
-//             transform: translate(0);
-//   }
-//   20% {
-//     -webkit-transform: translate(-2px, 2px);
-//             transform: translate(-2px, 2px);
-//   }
-//   40% {
-//     -webkit-transform: translate(-2px, -2px);
-//             transform: translate(-2px, -2px);
-//   }
-//   60% {
-//     -webkit-transform: translate(2px, 2px);
-//             transform: translate(2px, 2px);
-//   }
-//   80% {
-//     -webkit-transform: translate(2px, -2px);
-//             transform: translate(2px, -2px);
-//   }
-//   100% {
-//     -webkit-transform: translate(0);
-//             transform: translate(0);
-//   }
-// }
 
 // Intro
 .intro {
@@ -249,12 +206,22 @@ h4 {
     top: 90%;
     font-size: 2rem;
     font-weight: bold;
-    -webkit-animation: none;
-  	        animation: none;
   }
   a {
     font-size: 2rem;
   }
+}
+
+.modal-button {
+  background: -webkit-linear-gradient(#333, #333, #333, #ccc, #aaa, #333, #333, #333, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px black;
+  font-size: 1rem;
+}
+.lists {
+  font-size: 1rem;
+  font-weight: bold;
 }
 // Contact
 .contact-details {
