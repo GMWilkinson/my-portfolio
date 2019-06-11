@@ -19,6 +19,7 @@ h1, h2, h4 {
   bottom: 0;
 }
 .lists {
+  font-size: 1.5rem;
   -webkit-animation: jelly-horizontal 1.6s 2;
 	        animation: jelly-horizontal 1.6s 2;
 }
@@ -204,25 +205,25 @@ h4 {
   .prev, .next {
     position: absolute;
     top: 90%;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: bold;
   }
   a {
     font-size: 2rem;
   }
+  .modal-button {
+    background: -webkit-linear-gradient(#333, #333, #333, #ccc, #aaa, #333, #333, #333, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;
+    font-size: 1rem;
+  }
+  .lists {
+    font-size: 1rem;
+    font-weight: bold;
+  }
 }
 
-.modal-button {
-  background: -webkit-linear-gradient(#333, #333, #333, #ccc, #aaa, #333, #333, #333, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px black;
-  font-size: 1rem;
-}
-.lists {
-  font-size: 1rem;
-  font-weight: bold;
-}
 // Contact
 .contact-details {
   div {
