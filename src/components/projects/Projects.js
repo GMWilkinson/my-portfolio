@@ -90,7 +90,7 @@ const comProject = [
     name: 'Nodestats',
     mainImage: '/nodestats.png',
     description: <p>Nodestats is a site that tracks activity on different Ethereum nodes
-    . I made this site for TokenAnalyst and Bitmex Research. This was my first commercial
+    . I made this site as sole developer for TokenAnalyst and Bitmex Research. This was my first commercial
     project. It is a ReactJS app with a basic Express server. Displaying such an enormous
     amount of data was daunting at first. The site gets data from 80 different api's and some of the charts
     have over 5000 data points. Formatting this data and displaying it as fast as possible
@@ -134,7 +134,7 @@ class Intro extends React.Component {
 
   render() {
     return (
-      <article className={this.state.animate}>
+      <article className="project">
         <div>
           <h2 className="" id="projects">Projects</h2>
         </div>

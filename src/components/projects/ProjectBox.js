@@ -43,7 +43,7 @@ class ProjectBox extends React.Component {
     <Col>
       <Card className="">
         <Button className="modal-button" outline onClick={this.toggleModal}>{this.name}</Button>
-        <Modal scrollable size="xl" isOpen={this.state.modal} toggle={this.toggleModal}>
+        <Modal scrollable size="l" isOpen={this.state.modal} toggle={this.toggleModal}>
         <ModalHeader toggle={this.toggleModal}>{this.name}</ModalHeader>
           <ModalBody>
             <div>

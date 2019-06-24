@@ -19,7 +19,7 @@ const currentProject = [
     id: 2,
     name: 'Not Named Yet',
     description: <p>
-    This is an app where the user can create a blog. It is still very early development,
+    This is an app where the user can create a blog. It is still very early in development,
     I have found it more difficult than I had first imagined but that is only making it
     more exciting as a challenge. The main problem I have found is for the user to add images
     anywhere that they like on a post. I am playing with the idea that the user will
@@ -49,7 +49,7 @@ class Current extends React.Component {
 
   render() {
     return (
-      <article>
+      <article className="current">
         <div>
           <h2 className="" id="current">My Current Projects</h2>
         </div>

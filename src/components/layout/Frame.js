@@ -87,13 +87,13 @@ class Frame extends React.Component {
             <div>
               <CardBody>
                 <div>
-                  <h1>{this.nextState()}</h1>
+                  <section>{this.nextState()}</section>
                 </div>
               </CardBody>
             </div>
           </div>
         </div>
-        <div>
+        <div className="prev-next-box">
         {this.state.counter > 0 ?
         <div className="prev" onClick={this.prev}>{this.buttonTextPrev()}</div>
         :

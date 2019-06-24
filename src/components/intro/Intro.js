@@ -36,18 +36,18 @@ class Intro extends React.Component {
 
   render() {
     return (
-      <article>
+      <article className="intro">
         <div className="">
-          <h2 className="" id="about">About</h2>
+          <h2 className="" id="about">Introduction</h2>
         </div>
         <div>
           <p>Thanks for taking the time to check out my portfolio.</p>
           <p>I'm from London and have just finished my first commercial contract at TokenAnalyst,
            I have also completed the Immersive Web Development course at GA.</p>
           <p>I am currently focusing on ReactJS, node.js
-          and keeping my vanilla javascript up to date</p>{this.cats}
+          and keeping my vanilla javascript up to date</p>
           <p>Really enjoying coding and just wish I'd gotten into it sooner.</p>
-          <p>I'm currently looking for new opportunities as a Junior Developer.</p>
+          <p>I'm looking for new opportunities as a Junior Developer.</p>
           <Row>
             <Col>
               <TechLists />
