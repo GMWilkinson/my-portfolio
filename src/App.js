@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Frame from './components/layout/Frame'
+// import Frame from './components/layout/Frame'
 // import './scss/app.scss';
 import './App.css';
 
